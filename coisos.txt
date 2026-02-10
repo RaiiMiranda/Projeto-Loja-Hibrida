@@ -1,2 +1,5 @@
 Aprimorar Hamstorm com mais funcionalidades
 
+Ter uma história ou que seja útil em alguma área, algo educacional
+
+Em vez de ser roguelike
