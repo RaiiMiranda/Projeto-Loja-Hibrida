@@ -1,11 +1,35 @@
-Aprimorar Hamstorm com mais funcionalidades
-
-Ter uma história ou que seja útil em alguma área, algo educacional
-
-Em vez de ser roguelike
 
 
+pdv (Ponto de Venda) - fluxo principal - funcionalidades - regras de negocio
 
-Ou fazer um projeto no QtCreator, um sistema de biblioteca
+Fluxos do Mercado Livre
+fluxo 1 - mercado livre
+fluxo 2 - vendedores
+fluxo 3 - clientes
 
-Ou um jogo no GameMaker
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Ideias do que fazer:
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Sistema para ensino de programação/computacao para criancas daria pra ser utilizado na Maple Bear, algo parecido com o Scratch
+  cadastro de alunos (nomes nao podem repetir)
+  cadastro de professores (e-mails nao podem repetir)
+  cadastro de turmas (inserir alunos, professores, exercicios)
+  
+
+Sistema para venda dos bolos de pote Fernely's
+
+
+Sistema mobile, algo que as pessoas precisam e facilitaria o dia a dia delas
+
+
+(queria que tivesse representacao de cartas)
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Ferramentas
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+QtCreator
+GameMaker
