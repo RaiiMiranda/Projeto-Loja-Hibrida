@@ -12,12 +12,17 @@ fluxo 1 - mercado livre
 fluxo 2 - vendedores
 fluxo 3 - clientes
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 -- Ideias de Projeto:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Pergunta: Qual seria o fluxo principal, suas funcionalidades e regras de negócio?
+(queria pensar em algo que já tem e que eu possa fazer melhor)
+
 
 1) Sistema para ensino de programação/computacao para criancas daria pra ser utilizado na Maple Bear, algo parecido com o Scratch
   - cadastro de alunos (nomes nao podem repetir)
@@ -66,7 +71,9 @@ Pergunta: Qual seria o fluxo principal, suas funcionalidades e regras de negóci
   Funcionalidades
     Cadastro de moradores
     Cadastro de visitante
-    Controle de entrada e saída de visitantes
+    Controle de entrada e saída de visitantes 
+      (entrada por CPF, se tiver permissão. moradores poderiam acionar de alguma forma que alguem vem visita-lo, mas só o porteiro pode cadastrar o visitante)
+      pensar em uma forma de ser mais rápido a entrada de visitantes
     Reserva de áreas comuns
     Avisos do síndico
     Controle de boletos
@@ -96,6 +103,9 @@ Pergunta: Qual seria o fluxo principal, suas funcionalidades e regras de negóci
     Ranking entre usuários
     Ser um app instalável
 
+
+8) Tema que seja possível trazer gamificação
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -104,17 +114,18 @@ Pergunta: Qual seria o fluxo principal, suas funcionalidades e regras de negóci
 -- Ferramentas e Linguagens
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-QtCreator
-MySQL
+(não tenho muita facilidade, mas teria como fazer um projeto legal)
+  QtCreator
+  MySQL ou PHP
 
+(tenho mais facilidade)
+  Visual Studio Code - HTML, CSS, JavaScript
+  MySQL - SQL
 
-Visual Studio Code - HTML, CSS, JavaScript
-MySQL - SQL
-
-
-Angular - TypeScript
-Spring Tools - JAVA
-MySQL - SQL
+(acredito que conseguiria desenrolar)
+  Angular - TypeScript
+  Spring Tools - JAVA
+  MySQL - SQL
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
