@@ -13,30 +13,30 @@ fluxo 3 - clientes
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Sistema para ensino de programação/computacao para criancas daria pra ser utilizado na Maple Bear, algo parecido com o Scratch
-  cadastro de alunos (nomes nao podem repetir)
-  cadastro de professores (e-mails nao podem repetir)
-  cadastro de turmas (inserir alunos, professores, exercicios)
+  - cadastro de alunos (nomes nao podem repetir)
+  - cadastro de professores (e-mails nao podem repetir)
+  - cadastro de turmas (inserir alunos, professores, exercicios)
   
 
 Sistema para venda dos bolos de pote Fernely's
+  - carrinho, cadastro de clientes
 
 
-algo relacionado a cinema, livros, arte
-sistema para fazer review deles, mas o que faria ele ser melhor dos que ja tem?
+Sistema para fazer review de cinema, livros, arte
+  - mas o que faria ele ser melhor dos que ja tem?
 
 
-enjoei app 
-brechó online 
+Sistema de troca de colecionáveis (link ideia: https://colnect.com/br/stamps/currencies)
+  - filtro
+  - lista de desejo (se eu tenho A e quero B, e o outro tem B e quer A, o sistema avisa)
+  - "carrinho" que na verdade é um ambiente que ocorre a troca (da pra fazer algo como o persona na hora de combate)
+
+  - trazer a ideia de RPG
+  - gamificação (ganha medalhas se concluir uma coleção, pode evoluir)
+
+  - cadastro de colecionador (país de origem, perfil)
 
 
-site que mostra a linha do tempo da expansao territorial (ja tem)
-  qual outra linha do tempo da para fazer?
-
-
-
-
-(queria que fosse relacionado com arte)
-(queria que tivesse uma estetica de jogo, que nao pareça ser um website)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
