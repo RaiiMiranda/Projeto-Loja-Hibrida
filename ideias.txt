@@ -24,13 +24,13 @@ Pergunta: Qual seria o fluxo principal, suas funcionalidades e regras de negóci
 (queria pensar em algo que já tem e que eu possa fazer melhor)
 
 
-1) Sistema para ensino de programação/computacao para criancas daria pra ser utilizado na Maple Bear, algo parecido com o Scratch
+1) Sistema para ensino de programação/computação para crianças daria pra ser utilizado na Maple Bear, algo parecido com o Scratch
   - cadastro de alunos (nomes nao podem repetir)
   - cadastro de professores (e-mails nao podem repetir)
   - cadastro de turmas (inserir alunos, professores, exercicios)
 
 
-3) Sistema para fazer review de cinema, livros, arte
+3) Sistema para fazer review de cinema, livros, arte, musicas
   - mas o que faria ele ser melhor dos que ja tem?
 
 
