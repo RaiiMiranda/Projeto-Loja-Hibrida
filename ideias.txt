@@ -21,10 +21,22 @@ Sistema para ensino de programação/computacao para criancas daria pra ser util
 Sistema para venda dos bolos de pote Fernely's
 
 
-Sistema mobile, algo que as pessoas precisam e facilitaria o dia a dia delas
+algo relacionado a cinema, livros, arte
+sistema para fazer review deles, mas o que faria ele ser melhor dos que ja tem?
 
 
-(queria que tivesse representacao de cartas)
+enjoei app 
+brechó online 
+
+
+site que mostra a linha do tempo da expansao territorial (ja tem)
+  qual outra linha do tempo da para fazer?
+
+
+
+
+(queria que fosse relacionado com arte)
+(queria que tivesse uma estetica de jogo, que nao pareça ser um website)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -32,4 +44,5 @@ Sistema mobile, algo que as pessoas precisam e facilitaria o dia a dia delas
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 QtCreator
-GameMaker
+Visual Studio Code
+
