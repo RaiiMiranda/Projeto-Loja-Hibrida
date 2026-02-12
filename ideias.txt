@@ -78,7 +78,7 @@ Pergunta: Qual seria o fluxo principal, suas funcionalidades e regras de negóci
     Avisos do síndico
     Controle de boletos
     Registro de ocorrências
-  
+
   Diferencial
     Sistema de permissões
     Upload de documentos
