@@ -3,6 +3,7 @@
 |------------------------------------------------------------------------------------|
 |  Ele é uma boa referência                                                          |
 |  Tem as ofensivas, elas são uma boa forma de manter o usuário diariamente          |
+|  Tem os rankings diários                                                           |
 |                                                                                    |
 |  Como seria feito a personalização do personagem? Qual ferramenta uso para fazer?  |
 |------------------------------------------------------------------------------------|
