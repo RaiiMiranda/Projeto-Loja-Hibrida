@@ -135,12 +135,12 @@ Juntar essa ideia com a Plataforma de Organização de Estudos
 
 (não tenho muita facilidade, mas teria como fazer um projeto legal)
   Frontend - QtCreator
-  Backend  - 
+  Backend  - C++
   Banco    - MySQL
 
 (tenho mais facilidade)
   Frontend - Visual Studio Code - HTML, CSS, JavaScript
-  Backend  -
+  Backend  - JavaScript
   Banco    - MySQL - SQL
 
 (acredito que conseguiria desenrolar)
