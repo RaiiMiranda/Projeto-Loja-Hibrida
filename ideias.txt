@@ -103,8 +103,27 @@ Pergunta: Qual seria o fluxo principal, suas funcionalidades e regras de negóci
     Ranking entre usuários
     Ser um app instalável
 
+  Ideias
+    Momentos de descanso muda a tela e deixa um video relaxante
 
-8) Tema que seja possível trazer gamificação
+
+8) Plataforma que transforma rotina em RPG
+  Cada tarefa vira missão.
+    Usuário tem:
+      Energia
+      Força
+      Nível
+      Experiência
+
+    Tarefas = missões
+    Metas = quests
+    Hábitos = habilidades
+    Disciplina = experiência
+    Rotina = mapa
+
+    Usuário pode criar personagem e os atributos podem evoluir com base no comportamento real.
+
+Juntar essa ideia com a Plataforma de Organização de Estudos
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -115,21 +134,23 @@ Pergunta: Qual seria o fluxo principal, suas funcionalidades e regras de negóci
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 (não tenho muita facilidade, mas teria como fazer um projeto legal)
-  QtCreator
-  MySQL ou PHP
+  Frontend - QtCreator
+  Backend  - 
+  Banco    - MySQL
 
 (tenho mais facilidade)
-  Visual Studio Code - HTML, CSS, JavaScript
-  MySQL - SQL
+  Frontend - Visual Studio Code - HTML, CSS, JavaScript
+  Backend  -
+  Banco    - MySQL - SQL
 
 (acredito que conseguiria desenrolar)
-  Angular - TypeScript
-  Spring Tools - JAVA
-  MySQL - SQL
+  Frontend - Angular - TypeScript
+  Backend  - Spring Tools - JAVA
+  Banco    - MySQL - SQL
 
-(para organização de ideias)
-trello
-canva
+(para organização)
+  Cronograma - Trello
+  Ideias     - Milanote, Notion
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
