@@ -1,10 +1,11 @@
-|-----------------------------------------------------------------------------------|
-| O que faz do Duolingo ser bom?                                                    |
-|   Ele é uma boa referência                                                        |
-|   Tem as ofensivas, elas são uma boa forma de manter o usuário diariamente        |
-|                                                                                   |
-| Como seria feito a personalização do personagem? Qual ferramenta uso para fazer?  |
-|-----------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------|
+|  O que faz do Duolingo ser bom?                                                    |
+|------------------------------------------------------------------------------------|
+|  Ele é uma boa referência                                                          |
+|  Tem as ofensivas, elas são uma boa forma de manter o usuário diariamente          |
+|                                                                                    |
+|  Como seria feito a personalização do personagem? Qual ferramenta uso para fazer?  |
+|------------------------------------------------------------------------------------|
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
