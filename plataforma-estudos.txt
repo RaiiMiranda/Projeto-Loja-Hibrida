@@ -1,0 +1,161 @@
+|-----------------------------------------------------------------------------------|
+| O que faz do Duolingo ser bom?                                                    |
+|   Ele é uma boa referência                                                        |
+|   Tem as ofensivas, elas são uma boa forma de manter o usuário diariamente        |
+|                                                                                   |
+| Como seria feito a personalização do personagem? Qual ferramenta uso para fazer?  |
+|-----------------------------------------------------------------------------------|
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Projeto Integrador 01
+-- Plataforma que Transforma Rotina em RPG
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ideia: Uma plataforma onde a vida real vira um jogo de RPG.
+Em outras palavras: Plataforma gamificada com modelo adaptativo de progressão baseado em comportamento e consistência do usuário
+
+Tarefas = missões
+Metas = quests
+Hábitos = habilidades
+Disciplina = experiência
+Rotina = mapa
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Estrutura do Sistema
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Personagem do Usuário --------------------------------------------------------------------------------------------------------------------------------------
+
+O usuário cria um personagem com atributos. Esses atributos sobem com base no comportamento dele.
+
+Força - tarefas físicas
+Inteligência - estudo
+Carisma - networking/social
+Disciplina - constância
+Energia - controle diário
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Sistema de Missões -----------------------------------------------------------------------------------------------------------------------------------------
+
+Missões Diárias
+  Exemplo:
+    Estudar 1h
+    Treinar
+    Ler 10 páginas
+
+Missões Principais (Main Quests)
+  Exemplo:
+    Passar no concurso
+    Aprender inglês
+    Concluir faculdade
+
+(O sistema poderia quebrar automaticamente metas grandes em micro missões.)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Sistema de Experiência Inteligente -------------------------------------------------------------------------------------------------------------------------
+
+Para ganhar XP teriam que ter uma lógica mais interessante, não ser somente "Fez a tarefa? Então + 10XP". Tem que ter algum peso, por exemplo:
+XP = (Dificuldade × Tempo × Frequência) ÷ Atrasos
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Sistema de Energia (anti-procrastinação) -------------------------------------------------------------------------------------------------------------------
+
+Usuário poderia ter sua energia diária baseada em:
+
+Sono registrado
+Produtividade anterior
+Cumprimento de tarefas
+
+Se ele procrastina muito:
+
+Perde energia
+Missões rendem menos XP
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. Sistema de Evolução Baseado em Dados -----------------------------------------------------------------------------------------------------------------------
+
+O sistema pode detectar:
+
+Horário de maior produtividade
+Tarefas que mais falha
+Queda de disciplina
+Risco de abandono de meta
+
+E gerar alertas tipo:
+
+> Você está falhando mais em tarefas de estudo à noite.
+> Sugestão: mover para manhã.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Diferenciais
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Sistema de Classes
+
+Exemplo:
+  Guerreiro - foco em físico
+  Mago - foco em estudo
+  Arqueiro - foco em equilíbrio
+  Estrategista - foco em produtividade
+
+Classe influencia ganho de XP.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Sistema de Penalidade
+
+Se usuário ficar 3 dias sem cumprir missão:
+  Perde streak
+  Atributo cai
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Dashboard Analítico
+
+Mostra:
+  Evolução de atributos
+  Missões completadas
+  Taxa de falha
+  Score semanal de disciplina
+  Gráfico de consistência
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Reorganização automática de missões atrasadas
+
+Automaticamente o sistema reorganiza quando o usuário deixa alguma tarefa para trás.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. Modo Missão Emergencial
+
+Sistema percebe quando o usuário está prestes a desistir do hábito e ativa modo “missão emergencial”.
+
+Exemplo:
+  Missões mais fáceis
+  Recompensa maior
+  Notificação estratégica
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Ferramentas
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Frontend - React, Angular
+Backend  -  Spring Tools, Postman
+Banco    -  MySQL
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
