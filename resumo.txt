@@ -2,6 +2,13 @@ Animações de Graça:
 https://lottiefiles.com/pt/featured-free-animations
 
 
+-- Fluxo Principal ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+cadastro de usuário -> usuario cadastra seus eventos, financeiro, ... -> gera relatórios
+
+-- Funcionalidades ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 Basicamente,
 Será uma plataforma de organização de rotina gamificada. Terá criação de personagem e expansão de algo
 
