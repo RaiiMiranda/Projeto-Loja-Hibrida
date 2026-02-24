@@ -6,7 +6,27 @@ https://lottiefiles.com/pt/featured-free-animations
 cadastro de usuário -> usuario cadastra seus eventos, financeiro, ... -> gera relatórios
 
 -- Funcionalidades ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  - Criação de personagem:  	
+      atributos que sobem com base no comportamento dele
 
+  - Sistema de classes:    
+      classe influencia o ganho de XP
+
+  - Gamificação: 		 	
+      tarefas -> missões
+
+  - Sistema de energia: 	 	
+      registra sono, produtividade anterior, cumprimento de tarefas e se ele procrastina perde energia
+
+  - Sistema de penalidade:	
+      se ele ficar sem cumprir a tarefa
+
+  - Desafios:			
+      usuários podem se desafiar na produtividade
+
+  - Colecionáveis:		
+      permitir a troca de colecionáveis
 
 
 Basicamente,
