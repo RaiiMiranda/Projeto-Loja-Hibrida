@@ -162,7 +162,7 @@ Exemplo:
 API Rest
 
 Frontend - HTML, CSS, Bootstrap (facilitar a vida), React (pra nao precisar dar F5 pra atualizar a tela)
-Backend  - Node.js (para o sistema rodar 24h), Express.js (framework dentro do node pra criar rotas)
+Backend  - Node.js (para o sistema rodar 24h, mesmo se fechar a janela), Express.js (framework dentro do node pra criar rotas)
 Banco    - MySQL
 Suporte  - Postman (para verificar se a rota do node está buscando os dados certos do MySQL)
 Design   - Aseprite (pra fazer a arte, talvez)
