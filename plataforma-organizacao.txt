@@ -59,7 +59,8 @@ Missões Principais (Main Quests)
     Aprender inglês
     Concluir faculdade
 
-(O sistema poderia quebrar automaticamente metas grandes em micro missões.)
+(poderia quebrar automaticamente metas grandes em micro missões)
+(da pra se inspirar no layout do Habitica)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -67,6 +68,8 @@ Missões Principais (Main Quests)
 
 Para ganhar XP teriam que ter uma lógica mais interessante, não ser somente "Fez a tarefa? Então + 10XP". Tem que ter algum peso, por exemplo:
 XP = (Dificuldade × Tempo × Frequência) ÷ Atrasos
+
+(mas como mediria a dificuldade (?) o usuário poderia colocar na hora tipo: nome da tarefa, dificuldade, tempo, ...)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
