@@ -1,11 +1,11 @@
 
 
-Inspirações: 
+-- Inspirações: 
 Habitica: organizacao de tarefas com gamificacao, personagens e melhoria de mascotes
 Forest: anti procastinacao
 Duolingo: plataforma de estudos de línguas gamificada com ofensivas
 
-Meu sistema:
+-- Meu sistema:
 Plataforma de organização de tarefas com ofensivas e gamificação
   terá personagem e algo que cresce conforme o usuario faz alguma atividade tipo uma ofensiva do Duolingo, mas
   faz algo crescer, o que seria esse algo?
