@@ -162,33 +162,19 @@ Exemplo:
 -- Funcionalidades
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  - Criação de personagem:  	
-      atributos que sobem com base no comportamento dele
+	criação de personagem
+	criação de classes que interferem no ganho de XP
+	criação de afazeres
+	sistema de moedas
+	sistema de loja para customização de personagem
+	sistema de penalidade para quando deixa de fazer certa tarefa
+	sistema emergencial se o usuário está muito tempo sem acessar
+	sistema de ofensiva, primeiro dia ganha uma semente e com o decorrer das tarefas sendo realizadas ela vai crescendo, se não vai morrendo
+	sistema para ganho e troca de colecionáveis
+	geração de relatórios da produtividade
+	função de desafiar outros usuários na produtividade
 
-  - Sistema de classes:    
-      classe influencia o ganho de XP
-
-  - Gamificação: 		 	
-      tarefas -> missões
-
-  - Sistema de energia: 	 	
-      registra sono, produtividade anterior, cumprimento de tarefas e se ele procrastina perde energia
-
-  - Sistema de penalidade:	
-      se ele ficar sem cumprir a tarefa
-
-  - Desafios:			
-      usuários podem se desafiar na produtividade
-
-  - Sistema de Colecionáveis:		
-      permitir a troca de colecionáveis
-
-
-
-
-
-
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
