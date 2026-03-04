@@ -21,109 +21,9 @@ fluxo 3 - clientes
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Pergunta: Qual seria o fluxo principal, suas funcionalidades e regras de negócio?
-(queria pensar em algo que já tem e que eu possa fazer melhor)
 
 
-1) Sistema para ensino de programação/computação para crianças daria pra ser utilizado na Maple Bear, algo parecido com o Scratch
-  - cadastro de alunos (nomes nao podem repetir)
-  - cadastro de professores (e-mails nao podem repetir)
-  - cadastro de turmas (inserir alunos, professores, exercicios)
 
-
-3) Sistema para fazer review de cinema, livros, arte, musicas
-  - mas o que faria ele ser melhor dos que ja tem?
-
-
-4) Sistema de troca de colecionáveis (link ideia: https://colnect.com/br/stamps/currencies) (PDV)
-  Funcionalidades  
-    Cadastro de Colecionadores
-    Cadastro de Colecionaveis
-    Filtro
-    Lista de desejo (se eu tenho A e quero B, e o outro tem B e quer A, o sistema avisa)
-    "Carrinho" que na verdade é um ambiente que ocorre a troca (da pra fazer um style como o persona na hora de combate)
-
-  Diferencial
-    Trazer a ideia de RPG
-    Gamificação (ganha medalhas se concluir uma coleção, pode evoluir seu perfil)
-    Cadastro de colecionador (país de origem, perfil)
-
-
-5) Sistema de Agendamento para Clínicas ou Profissionais Autônomos
-  Problema real: agenda no WhatsApp vira bagunça.
-
-  Funcionalidades
-    Cadastro de profissionais
-    Agenda com horários disponíveis
-    Confirmação automática
-    Painel administrativo
-    Histórico de atendimentos
-
-  Diferencial
-    Envio de e-mail automático
-    Calendário interativo
-    Controle de conflitos de horário
-    Área do cliente
-
-
-6) Plataforma para Gestão de Condomínios
-  (ver com meu condominio)
-
-  Funcionalidades
-    Cadastro de moradores
-    Cadastro de visitante
-    Controle de entrada e saída de visitantes 
-      (entrada por CPF, se tiver permissão. moradores poderiam acionar de alguma forma que alguem vem visita-lo, mas só o porteiro pode cadastrar o visitante)
-      pensar em uma forma de ser mais rápido a entrada de visitantes
-    Reserva de áreas comuns
-    Avisos do síndico
-    Controle de boletos
-    Registro de ocorrências
-
-  Diferencial
-    Sistema de permissões
-    Upload de documentos
-    Notificações
-    Dashboard administrativo
-
-
-7) Plataforma de Organização de Estudos
-  Funcionalidades
-    Cadastro de usuário
-    Cadastro de matérias
-    Planejamento semanal
-    Controle de horas estudadas
-    Sistema de metas
-    Checklist de tarefas
-
-  Diferencial
-    Estatísticas de produtividade
-    Gamificação (pontuação, níveis, linha do tempo)
-      Fazer algo tipo o app Arvore, que o tanto que voce lê ganha sementes para plantar e criar uma horta
-      Dá pra fazer algo tipo Jardim de Cristais
-    Ranking entre usuários
-    Ser um app instalável
-
-  Ideias
-    Momentos de descanso muda a tela e deixa um video relaxante
-
-
-8) Plataforma que transforma rotina em RPG
-  Cada tarefa vira missão.
-    Usuário tem:
-      Energia
-      Força
-      Nível
-      Experiência
-
-    Tarefas = missões
-    Metas = quests
-    Hábitos = habilidades
-    Disciplina = experiência
-    Rotina = mapa
-
-    Usuário pode criar personagem e os atributos podem evoluir com base no comportamento real.
-
-Juntar essa ideia com a Plataforma de Organização de Estudos
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -133,20 +33,10 @@ Juntar essa ideia com a Plataforma de Organização de Estudos
 -- Ferramentas e Linguagens
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-(não tenho muita facilidade, mas teria como fazer um projeto legal)
-  Frontend - QtCreator
-  Backend  - C++
-  Banco    - MySQL
-
 (tenho mais facilidade)
-  Frontend - Visual Studio Code - HTML, CSS, JavaScript
-  Backend  - JavaScript
-  Banco    - MySQL - SQL
-
-(acredito que conseguiria desenrolar)
-  Frontend - Angular - TypeScript
-  Backend  - Spring Tools - JAVA
-  Banco    - MySQL - SQL
+  Frontend - React
+  Backend  - Node.js
+  Banco    - PostgreSQL
 
 (para organização)
   Cronograma - Trello
