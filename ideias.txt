@@ -1,28 +1,24 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 -- Projeto Integrador 01
+-- Sistema de Gerenciamento Compras presenciais e online
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Focar no fluxo principal, pensar nas funcionalidades e regras de negócio.
 Deixar a documentação pro final. Não é a forma certa de se fazer, pois o desenvolvimento e a documentação devem caminhar juntas. Mas como somos estudantes 
 e estamos desenvolvendo nosso primeiro projeto é melhor para evitar muito retrabalho.
 
-Exemplo: Fluxos do Mercado Livre
-fluxo 1 - mercado livre
-fluxo 2 - vendedores
-fluxo 3 - clientes
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
--- Ideias de Projeto:
+-- Ideias de Projeto
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Pergunta: Qual seria o fluxo principal, suas funcionalidades e regras de negócio?
 
-
+Fluxo principal: administrador/cliente -> cadastro/login -> visualização cliente -> compra -> finalização compra
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -33,14 +29,12 @@ Pergunta: Qual seria o fluxo principal, suas funcionalidades e regras de negóci
 -- Ferramentas e Linguagens
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-(tenho mais facilidade)
-  Frontend - React
-  Backend  - Node.js
-  Banco    - PostgreSQL
+Frontend - React
+Backend  - Node.js
+Banco    - PostgreSQL
 
-(para organização)
-  Cronograma - Trello
-  Ideias     - Milanote, Notion
+Cronograma - Trello
+Ideias     - Milanote, Notion
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
