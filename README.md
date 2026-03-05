@@ -1,7 +1,10 @@
-# Projeto Integrador 01
+# Projeto Integrador 01 💻💡
 
 ### Tema
-Sistema de Gerenciamento Compras Presenciais e Online de Instrumentos Musicais
+Sistema de Gerenciamento Compras Presenciais e Online de Instrumentos Musicais\
+📯🥁🎷🎺🎸🪕🎻🎹
+
+---
 
 ### Objetivo
 Sistema completo de venda de instrumentos musicais.
@@ -12,6 +15,8 @@ Instrumentos virtuais;
 Promoções;
 ...
 
+---
+
 ### Ferramentas e Linguagens
 
 Frontend - React
@@ -20,6 +25,8 @@ Banco    - PostgreSQL
 
 Cronograma - Trello
 Ideias     - Milanote, Notion
+
+---
 
 ### Documentação
 
