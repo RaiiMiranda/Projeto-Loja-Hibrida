@@ -1,7 +1,7 @@
 # Projeto Integrador 01
 
 ### Tema
-Sistema de Gerenciamento Compras presenciais e online
+Sistema de Gerenciamento Compras Presenciais e Online de Instrumentos Musicais
 
 ### Objetivo
 a
@@ -12,7 +12,7 @@ a
 ### Ferramentas e Linguagens
 
 Frontend - React
-Backend  - Node.js
+Backend  - Node.js + Express.js
 Banco    - PostgreSQL
 
 Cronograma - Trello
