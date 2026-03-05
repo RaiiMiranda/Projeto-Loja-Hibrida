@@ -1,7 +1,7 @@
 # Projeto Integrador 01
 
 ### Tema
-a
+Sistema de Gerenciamento Compras presenciais e online
 
 ### Objetivo
 a
