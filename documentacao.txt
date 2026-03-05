@@ -3,9 +3,7 @@
 -- Sistema de Gerenciamento Compras presenciais e online
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Focar no fluxo principal, pensar nas funcionalidades e regras de negócio.
-Deixar a documentação pro final. Não é a forma certa de se fazer, pois o desenvolvimento e a documentação devem caminhar juntas. Mas como somos estudantes 
-e estamos desenvolvendo nosso primeiro projeto é melhor para evitar muito retrabalho.
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
