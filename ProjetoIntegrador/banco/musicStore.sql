@@ -29,7 +29,7 @@ CREATE TABLE user (
 -- Tabela Endereço
 CREATE TABLE address (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    -- type ENUM
+    type TINYINT(1) NOT NULL DEFAULT 1 -- 1 (cobrança) 0 (entrega)
     country VARCHAR(100) NOT NULL,
     city VARCHAR(100) NOT NULL,
     state VARCHAR(100) NOT NULL,
