@@ -8,6 +8,7 @@ Banco    - PostgreSQL
 
 Cronograma - Trello
 Ideias     - Milanote, Notion
+Diagramas  - Draw.io
 
 --------------------------------------------------------------------------------------
 
