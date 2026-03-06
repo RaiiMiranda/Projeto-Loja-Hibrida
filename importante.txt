@@ -10,3 +10,10 @@ https://nodejs.org/api/documentation.html
 
 -- Documentação React
 https://react.dev/learn
+
+
+sempre que um pedido for marcado como "Pago", você deve subtrair a quantity da tabela product para que o estoque atualize.
+Usuário faz um Pedido.
+O Pedido tem vários Itens (que puxam os Produtos).
+O Pedido gera um Pagamento.
+O Carrinho é temporário e vincula Usuário ao Produto.
