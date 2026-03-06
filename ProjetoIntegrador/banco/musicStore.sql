@@ -38,7 +38,8 @@ CREATE TABLE address (
 CREATE TABLE product (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
-    durability VARCHAR(100) NOT NULL,
+    condition VARCHAR(100) NOT NULL,
+	quantity INT NOT NULL,
     category ENUM('ARCOS', 'CORDAS', 'SOPRO', 'ÁUDIO', 'PERCUSSÃO', 'TECLAS') DEFAULT 'ARCOS' NOT NULL,
     description VARCHAR(200) NOT NULL,
     price DECIMAL(15,2) NOT NULL,
@@ -71,9 +72,12 @@ CREATE TABLE orderItem (
 -- Tabela Carrinho
 CREATE TABLE cart (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT, 
+	quantity INT NOT NULL,
 	product_id BIGINT NOT NULL,
-	FOREIGN KEY (product_id) REFERENCES product(id)
-);
+	user_id BIGINT NOT NULL,
+	FOREIGN KEY (product_id) REFERENCES product(id),
+	FOREIGN KEY (user_id) REFERENCES user(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Tabela Pagamento
 CREATE TABLE payment (
@@ -82,15 +86,22 @@ CREATE TABLE payment (
 	status TINYINT(1) NOT NULL DEFAULT 1, -- 1 (pendente) 0 (pago)
 	order_id BIGINT NOT NULL,
 	FOREIGN KEY (order_id) REFERENCES orderClient(id)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Tabela Avaliação
 CREATE TABLE review (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
+	rating ENUM(1, 2, 3, 4, 5) NOT NULL,
+	comment VARCHAR(500) NOT NULL,
 	user_id BIGINT NOT NULL,
-	FOREIGN KEY (user_id) REFERENCES user(id)
-);
+	product_id BIGINT NOT NULL,
+	FOREIGN KEY (user_id) REFERENCES user(id),
+	FOREIGN KEY (product_id) REFERENCES product(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- Tabela Estoque
+CREATE TABLE stock (
 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
