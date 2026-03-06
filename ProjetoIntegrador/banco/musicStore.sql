@@ -60,10 +60,10 @@ CREATE TABLE orderClient (
 -- Tabela Item do Pedido
 CREATE TABLE orderItem (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-	order_id BIGINT NOT NULL,
-	product_id BIGINT NOT NULL,
 	quantity INT NOT NULL,
     unit_price DECIMAL(15,2) NOT NULL,
+	order_id BIGINT NOT NULL,
+	product_id BIGINT NOT NULL,
 	FOREIGN KEY (order_id) REFERENCES orderClient(id),
 	FOREIGN KEY (product_id) REFERENCES product(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
