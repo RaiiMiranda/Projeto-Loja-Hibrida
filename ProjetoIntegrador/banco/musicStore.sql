@@ -50,11 +50,10 @@ CREATE TABLE product (
 CREATE TABLE orderClient (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
     date DATE NOT NULL,
-	status ENUM('Pendente', 'Pago', 'Enviado') DEFAULT 'Pendente' NOT NULL,
+	channel ENUM('ONLINE', 'PRESENCIAL') DEFAULT 'ONLINE'
+	status ENUM('PENDENTE', 'PAGO', 'ENVIADO') DEFAULT 'PENDENTE' NOT NULL,
 	total_value DECIMAL(15,2) NOT NULL,
-	product_id BIGINT NOT NULL,
 	user_id BIGINT NOT NULL,
-	FOREIGN KEY (product_id) REFERENCES product(id),
 	FOREIGN KEY (user_id) REFERENCES user(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -91,17 +90,10 @@ CREATE TABLE payment (
 -- Tabela Avaliação
 CREATE TABLE review (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-	rating ENUM(1, 2, 3, 4, 5) NOT NULL,
+	rating TINYINT(1) NOT NULL,
 	comment VARCHAR(500) NOT NULL,
 	user_id BIGINT NOT NULL,
 	product_id BIGINT NOT NULL,
 	FOREIGN KEY (user_id) REFERENCES user(id),
 	FOREIGN KEY (product_id) REFERENCES product(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- Tabela Estoque
-CREATE TABLE stock (
-
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
