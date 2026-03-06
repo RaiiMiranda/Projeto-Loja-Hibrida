@@ -5,20 +5,12 @@
 
 CREATE DATABASE musicStore;
 
-USE musicStroe;
-
--- Tabela Administrador
-CREATE TABLE admin (
-	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL,
-    password VARCHAR(150) NOT NULL,
-    phone VARCHAR(12) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+USE musicStore;
 
 -- Tabela Usuário
 CREATE TABLE user (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
+	type TINYINT(1) NOT NULL DEFAULT 1, -- 1 (cliente) 0 (admin)
     name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
     password VARCHAR(150) NOT NULL,
@@ -29,7 +21,7 @@ CREATE TABLE user (
 -- Tabela Endereço
 CREATE TABLE address (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    type TINYINT(1) NOT NULL DEFAULT 1 -- 1 (cobrança) 0 (entrega)
+    type TINYINT(1) NOT NULL DEFAULT 1, -- 1 (cobrança) 0 (entrega)
     country VARCHAR(100) NOT NULL,
     state VARCHAR(100) NOT NULL,
     city VARCHAR(100) NOT NULL,
@@ -53,15 +45,6 @@ CREATE TABLE product (
     available TINYINT(1) NOT NULL DEFAULT 1 -- 1 (em estoque) 0 (esgotado)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-ENUM Category (
-	ARCOS,
-	CORDAS,
-	SOPRO,
-	ÁUDIO,
-	PERCUSSÃO,
-	TECLAS
-);
-
 -- Tabela Pedidos
 CREATE TABLE orderClient (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
@@ -69,17 +52,44 @@ CREATE TABLE orderClient (
 	status ENUM('Pendente', 'Pago', 'Enviado') DEFAULT 'Pendente' NOT NULL,
 	total_value DECIMAL(15,2) NOT NULL,
 	product_id BIGINT NOT NULL,
-	FOREIGN KEY (product_id) REFERENCES product(id)
+	user_id BIGINT NOT NULL,
+	FOREIGN KEY (product_id) REFERENCES product(id),
+	FOREIGN KEY (user_id) REFERENCES user(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Tabela Item do Pedido
 CREATE TABLE orderItem (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
 	order_id BIGINT NOT NULL,
-	FOREIGN KEY (order_id) REFERENCES orderClient(id)
+	product_id BIGINT NOT NULL,
+	quantity INT NOT NULL,
+    unit_price DECIMAL(15,2) NOT NULL,
+	FOREIGN KEY (order_id) REFERENCES orderClient(id),
+	FOREIGN KEY (product_id) REFERENCES product(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- Tabela Carrinho
+CREATE TABLE cart (
+	id BIGINT PRIMARY KEY AUTO_INCREMENT, 
+	product_id BIGINT NOT NULL,
+	FOREIGN KEY (product_id) REFERENCES product(id)
+);
 
+-- Tabela Pagamento
+CREATE TABLE payment (
+	id BIGINT PRIMARY KEY AUTO_INCREMENT,
+	method VARCHAR(50) NOT NULL,
+	status TINYINT(1) NOT NULL DEFAULT 1, -- 1 (pendente) 0 (pago)
+	order_id BIGINT NOT NULL,
+	FOREIGN KEY (order_id) REFERENCES orderClient(id)
+);
+
+-- Tabela Avaliação
+CREATE TABLE review (
+	id BIGINT PRIMARY KEY AUTO_INCREMENT,
+	user_id BIGINT NOT NULL,
+	FOREIGN KEY (user_id) REFERENCES user(id)
+);
 
 
 
