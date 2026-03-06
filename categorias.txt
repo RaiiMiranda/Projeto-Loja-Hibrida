@@ -2,8 +2,9 @@ https://www.lojaconstelacao.com.br/
 https://www.topmusical.com.br/
 https://psicopedagogia.com.br/blog/nome-de-todos-os-instrumentos-musicais
 
-CATEGORIAS de PRODUTOS
-
+---------------------------------------------------------------------------------
+-- CATEGORIAS de PRODUTOS
+---------------------------------------------------------------------------------
 1. Arcos
 2. Cordas
 3. Sopro
