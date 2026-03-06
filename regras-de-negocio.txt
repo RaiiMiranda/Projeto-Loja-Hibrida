@@ -1,6 +1,38 @@
-sempre que um pedido for marcado como "Pago", você deve subtrair a quantity da tabela product para que o estoque atualize.
+sempre que um pedido for marcado como "Pago", subtrair a quantity da tabela product para que o estoque atualize.
 
 Usuário faz um Pedido.
 O Pedido tem vários Itens (que puxam os Produtos).
 O Pedido gera um Pagamento.
 O Carrinho é temporário e vincula Usuário ao Produto.
+
+
+-- -----------------------------------------------------------------------
+-- Tabelas do Banco
+-- -----------------------------------------------------------------------
+
+Usuário
+Endereço
+Produto
+Pedidos
+Item do Pedido
+Carrinho
+Pagamento
+Avaliação
+
+-- -----------------------------------------------------------------------
+-- Regras de Negócio
+-- -----------------------------------------------------------------------
+
+-- User 1 (Cliente)
+pode fazer um pedido por vez
+pode ter um ou mais endereços vinculados à ele
+pode adicionar um ou mais produtos no carrinho
+ 
+-- User 0 (Admin)
+pode cadastrar um ou mais produtos
+pode remover um ou mais produtos
+pode editar um ou mais produtos
+pode verificar status de venda
+pode gerar relatórios
+
+-- Pedidos
