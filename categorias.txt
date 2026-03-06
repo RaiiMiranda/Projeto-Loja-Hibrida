@@ -2,7 +2,7 @@ https://www.lojaconstelacao.com.br/
 https://www.topmusical.com.br/
 https://psicopedagogia.com.br/blog/nome-de-todos-os-instrumentos-musicais
 
-Categorias Produtos
+CATEGORIAS de PRODUTOS
 
 1. Arcos
 2. Cordas
@@ -16,14 +16,12 @@ ARCOS
     Violas de Arco
     Violinos
 
-
 CORDAS
     Violino
     Contrabaixo
     Guitarra
     Violoncelo
     Harpa
-
 
 SOPRO
     Flauta
@@ -32,7 +30,6 @@ SOPRO
     Trompete
     Saxofone
 
-
 ÁUDIO
     Fones de ouvido
     Microfone
@@ -40,14 +37,12 @@ SOPRO
     Amplificadores
     Cabos de Áudio
 
-
 PERCUSSÃO
     Bateria
     Tamborim
     Xilofone
     Pratos
     Agogô
-
 
 TECLAS
     Piano
