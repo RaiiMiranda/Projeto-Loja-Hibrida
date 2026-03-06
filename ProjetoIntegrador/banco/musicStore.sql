@@ -47,19 +47,37 @@ CREATE TABLE product (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
     durability VARCHAR(100) NOT NULL,
-    category VARCHAR(20) NOT NULL,
+    category ENUM('ARCOS', 'CORDAS', 'SOPRO', 'ÁUDIO', 'PERCUSSÃO', 'TECLAS') DEFAULT 'ARCOS' NOT NULL,
     description VARCHAR(200) NOT NULL,
     price DECIMAL(15,2) NOT NULL,
     available TINYINT(1) NOT NULL DEFAULT 1 -- 1 (em estoque) 0 (esgotado)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+ENUM Category (
+	ARCOS,
+	CORDAS,
+	SOPRO,
+	ÁUDIO,
+	PERCUSSÃO,
+	TECLAS
+);
+
 -- Tabela Pedidos
-CREATE TABLE orderProduct (
+CREATE TABLE orderClient (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    date DATE
+    date DATE NOT NULL,
+	status ENUM('Pendente', 'Pago', 'Enviado') DEFAULT 'Pendente' NOT NULL,
+	total_value DECIMAL(15,2) NOT NULL,
+	product_id BIGINT NOT NULL,
+	FOREIGN KEY (product_id) REFERENCES product(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
+-- Tabela Item do Pedido
+CREATE TABLE orderItem (
+	id BIGINT PRIMARY KEY AUTO_INCREMENT,
+	order_id BIGINT NOT NULL,
+	FOREIGN KEY (order_id) REFERENCES orderClient(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 
