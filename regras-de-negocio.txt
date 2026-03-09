@@ -32,6 +32,11 @@ pode adicionar um ou mais produtos no carrinho
 pode cadastrar um ou mais produtos
 pode remover um ou mais produtos
 pode editar um ou mais produtos
+
+cadastrar categoria
+remover categoria
+editar categoria
+
 pode verificar status de venda
 pode gerar relatórios
 
