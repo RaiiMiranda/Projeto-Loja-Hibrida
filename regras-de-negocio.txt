@@ -1,43 +1,127 @@
-sempre que um pedido for marcado como "Pago", subtrair a quantity da tabela product para que o estoque atualize.
-
-Usuário faz um Pedido.
-O Pedido tem vários Itens (que puxam os Produtos).
-O Pedido gera um Pagamento.
-O Carrinho é temporário e vincula Usuário ao Produto.
-
-
 -- -----------------------------------------------------------------------
 -- Tabelas do Banco
 -- -----------------------------------------------------------------------
 
-Usuário
-Endereço
-Produto
-Pedidos
-Item do Pedido
-Carrinho
-Pagamento
-Avaliação
+users
+addres
+category
+product
+product_image
+inventory
+order_client
+order_item
+cart
+payment
+review
 
 -- -----------------------------------------------------------------------
 -- Regras de Negócio
 -- -----------------------------------------------------------------------
 
--- User 1 (Cliente)
-pode fazer um pedido por vez
-pode ter um ou mais endereços vinculados à ele
-pode adicionar um ou mais produtos no carrinho
- 
--- User 0 (Admin)
-pode cadastrar um ou mais produtos
-pode remover um ou mais produtos
-pode editar um ou mais produtos
+-- Pedido Presencial x Online
+presencial - usa store_stock e NÃO precisa de endereço de entrega
+online     - usa online_stock e precisa de endereço de entrega
 
-cadastrar categoria
-remover categoria
-editar categoria
 
-pode verificar status de venda
-pode gerar relatórios
+-- -----------------------------------------------------------------------
+-- User (Client)
+-- -----------------------------------------------------------------------
+cria conta
+atualiza seus dados pessoais
+cadastra um ou mais endereços
+consulta produtos da loja
+adiciona produtos ao carrinho
+altera a quantidade de produtos no carrinho
+remove produtos do carrinho
+finaliza seu pedido
+escolhe endereço de entrega
+escolhe método de pagamento
+acompanha status do pedido
+visualiza historico de pedidos
+avalia produtos comprados
 
--- Pedidos
+
+-- -----------------------------------------------------------------------
+-- User (Admin)
+-- -----------------------------------------------------------------------
+- Gerencia Produtos
+cadastra
+edita
+remove
+
+- Gerencia Categorias
+cadastra
+edita
+remove
+
+- Gerencia Estoque
+atualiza estoque loja física
+atualiza estoque do e-commerce
+
+- Gerencia Pedidos
+visualiza todos pedidos
+altera status
+
+- Gera Relatórios
+produtos mais vendidos
+faturamento por período
+pedidos por status
+produtos mais avaliados
+clientes que mais compram
+vendas online vs presencial
+
+
+-- -----------------------------------------------------------------------
+-- Produto
+-- -----------------------------------------------------------------------
+deve pertencer a uma categoria
+pode possuir uma ou mais imagens
+possui condição (novo ou usado)
+possui preço maior que zero
+
+
+-- -----------------------------------------------------------------------
+-- Carrinho
+-- -----------------------------------------------------------------------
+um cliente pode adicionar vários produtos
+não gera reserva de estoque
+cada produto tem quantidade
+o carrinho pertence a um único cliente
+ao finalizar a compra:
+	gera um pedido
+	itens do carrinho viram order_item
+	pode ser limpo
+
+
+-- -----------------------------------------------------------------------
+-- Pedido
+-- -----------------------------------------------------------------------
+possuir pelo menos 1 item
+estar associado a um cliente
+possuir um pagamento
+possuir um valor total
+
+
+-- -----------------------------------------------------------------------
+-- Estoque
+-- -----------------------------------------------------------------------
+só é reduzido quando o pedido é confirmado
+quando é comprado algo:
+	estoque = estoque - quantidade_comprada
+se chegar a 0 (não permitir ficar negativo):
+	available = false
+
+
+-- -----------------------------------------------------------------------
+-- Avaliações
+-- -----------------------------------------------------------------------
+ser de 1 a 5
+cliente pode avaliar 1 vez por produto
+só pode avaliar se comprou o produto
+
+
+-- -----------------------------------------------------------------------
+-- Pagamento
+-- -----------------------------------------------------------------------
+um pedido deve ter um pagamento
+
