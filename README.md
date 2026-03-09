@@ -18,7 +18,7 @@ Promoções;
 
 ### 🎸 Ferramentas e Linguagens
 
-Frontend - React <br>
+Frontend - Tailwind CSS, React <br>
 Backend  - Node.js + Express.js <br>
 Banco    - PostgreSQL 
 
