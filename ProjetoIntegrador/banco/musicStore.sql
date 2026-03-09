@@ -26,6 +26,8 @@ CREATE TYPE order_status AS ENUM (
 	'CANCELADO'
 );
 
+CREATE TYPE payment_status AS ENUM ('PENDENTE', 'PAGO', 'RECUSADO');
+
 -- -----------------------------------------------------------------------
 -- Criação das Tabelas
 -- -----------------------------------------------------------------------
@@ -96,7 +98,7 @@ CREATE TABLE inventory (
 -- Tabela Pedidos
 CREATE TABLE order_client (
 	id BIGSERIAL PRIMARY KEY,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
 	channel order_channel DEFAULT 'ONLINE' NOT NULL,
 	status order_status DEFAULT 'PENDENTE' NOT NULL,
 	total_value DECIMAL(15,2) NOT NULL,
@@ -130,7 +132,7 @@ CREATE TABLE cart (
 CREATE TABLE payment (
 	id BIGSERIAL PRIMARY KEY,
 	method VARCHAR(50) NOT NULL,
-	status BOOLEAN DEFAULT TRUE NOT NULL, -- 1 (pendente) 0 (pago)
+	status payment_status 'PENDENTE' NOT NULL,
 	order_id BIGINT NOT NULL,
 	FOREIGN KEY (order_id) REFERENCES order_client(id)
 );
