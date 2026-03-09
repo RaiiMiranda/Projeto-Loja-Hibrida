@@ -70,6 +70,7 @@ CREATE TABLE category (
 CREATE TABLE product (
 	id BIGSERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
+	brand VARCHAR(100) NOT NULL,
     condition product_condition NOT NULL,
     description VARCHAR(200) NOT NULL,
     price DECIMAL(15,2) NOT NULL,
