@@ -104,7 +104,7 @@ CREATE TABLE order_client (
 	status order_status DEFAULT 'PENDENTE' NOT NULL,
 	total_value DECIMAL(15,2) NOT NULL,
 	user_id BIGINT NOT NULL,
-	address_id BIGINT NOT NULL,
+	address_id BIGINT, -- se o cliente estiver presencial, ele não será obrigado a cadastrar seu endereço
 	FOREIGN KEY (user_id) REFERENCES users(id),
 	FOREIGN KEY (address_id) REFERENCES address(id)
 );
