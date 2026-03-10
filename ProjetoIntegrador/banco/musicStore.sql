@@ -133,7 +133,7 @@ CREATE TABLE cart (
 CREATE TABLE payment (
 	id BIGSERIAL PRIMARY KEY,
 	method VARCHAR(50) NOT NULL,
-	status payment_status 'PENDENTE' NOT NULL,
+	status payment_status DEFAULT 'PENDENTE' NOT NULL,
 	order_id BIGINT NOT NULL,
 	FOREIGN KEY (order_id) REFERENCES order_client(id)
 );
