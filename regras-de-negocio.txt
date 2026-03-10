@@ -23,22 +23,22 @@ inventory pode ter 1:1 produto (por causa do unique no id, se nao seria 1:N)
 categoria pode 1:N produtos
 produto pode ter 1:N produto_imagens
 
+usuário pode ter 1:N endereços
+usuário pode ter 1:N pedidos_cliente 
+
 -- carrinho liga usuario e produto
 usuário pode ter 1:N carrinho
 produto pode ter 1:N carrinho
-
-usuário pode ter 1:N endereços
-usuário pode ter 1:N pedidos_cliente 
 
 -- reviews liga pedido e produto
 usuário pode ter 1:N reviews
 produto pode ter 1:N reviews
 
-itens_pedido liga pedido_cliente e produto
+-- itens_pedido liga pedido_cliente e produto
 produto pode ter 1:N itens_pedido
 pedido_cliente pode ter 1:N itens_pedido
 
-pedido_cliente pode ter 1:N payment
+pedido_cliente pode ter 1:N payment (porque pode acontecer de ser recusado)
 
 
 // -- -----------------------------------------------------------------------
