@@ -1,7 +1,7 @@
 # Projeto Integrador 01 💻💡
 
 ### 📯 Tema
-Sistema de Gerenciamento Compras Presenciais e Online de Instrumentos Musicais\
+Sistema de Gerenciamento para Loja Híbrida de Instrumentos Musicais
 
 ---
 
