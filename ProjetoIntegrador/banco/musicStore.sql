@@ -35,7 +35,7 @@ CREATE TYPE payment_status AS ENUM ('PENDENTE', 'PAGO', 'RECUSADO');
 -- Tabela Usuário
 CREATE TABLE users (
 	id BIGSERIAL PRIMARY KEY,
-	type BOOLEAN DEFAULT FALSE NOT NULL, -- 0 (cliente)  1 (admin)
+	is_admin BOOLEAN DEFAULT FALSE NOT NULL, -- 0 (cliente)  1 (admin)
     name VARCHAR(100) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     password VARCHAR(150) NOT NULL,
