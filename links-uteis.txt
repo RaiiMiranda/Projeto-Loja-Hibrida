@@ -5,7 +5,8 @@ E-commerce   -> https://www.youtube.com/watch?v=hPv9QwvliEM&list=PLzb46hGUzitBp5
 E-commerce 2 -> https://www.youtube.com/watch?v=qSHHOjXouI4
 
 
-usar esse: lista to do  -> https://www.youtube.com/watch?v=JvrenJBnjnQ
+lista to do  -> https://www.youtube.com/watch?v=JvrenJBnjnQ
+autenticacao -> https://www.youtube.com/watch?v=-v8zHjXGRxo
 
 
 Documentação Node
