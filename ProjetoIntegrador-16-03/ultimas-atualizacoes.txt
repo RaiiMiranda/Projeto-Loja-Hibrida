@@ -1,0 +1,4 @@
+
+estou tentando fazer a autenticacao pelo auth.js
+https://www.youtube.com/watch?v=-v8zHjXGRxo
+https://www.youtube.com/watch?v=YMouZ_HfK0M
