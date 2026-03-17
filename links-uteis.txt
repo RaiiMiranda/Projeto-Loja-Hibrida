@@ -25,4 +25,5 @@ autenticacao -> https://www.youtube.com/watch?v=-v8zHjXGRxo
 -- Documentação React
 https://react.dev/learn
 
-carrinho -> https://www.youtube.com/watch?v=HSAlJJI6K_A
+carrinho react -> https://www.youtube.com/watch?v=HSAlJJI6K_A
+carrinho node  -> https://www.youtube.com/watch?v=KvwJweB92FI
