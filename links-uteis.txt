@@ -27,3 +27,4 @@ https://react.dev/learn
 
 carrinho react -> https://www.youtube.com/watch?v=HSAlJJI6K_A
 carrinho node  -> https://www.youtube.com/watch?v=KvwJweB92FI
+outr carrinho  -> https://www.youtube.com/watch?v=V5xoeyOtgIA
