@@ -18,4 +18,4 @@ CONCLUSÃO
   Ex.: 1° Definição do tema e suas funcionalidades, 2° Definicação das tabelas e campos do sistema, 3° implementacao do banco ...
 - referecias utilizadas (videos, sites (sites de lojas de instrumentos e sites de programacao em JS), documentacoes, ...)
 - draw.io do banco de dados relacional
-
+- print de telas dos desenvolvimento (PostgreSQL e Postman)
