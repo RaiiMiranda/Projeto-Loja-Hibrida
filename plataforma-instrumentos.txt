@@ -2,7 +2,7 @@
 -- Ferramentas
 --------------------------------------------------------------------------------------
 
-Frontend - React
+Frontend - React + TailwindCSS (?)
 Backend  - Node.js + Express.js
 Banco    - PostgreSQL
 
