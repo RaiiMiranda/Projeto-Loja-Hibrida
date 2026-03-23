@@ -1,0 +1,93 @@
+
+site bonito: https://www.krunner.com.br/
+
+------------------------------------------------------------------------------------------
+-- ÚLTIMAS ATUALIZAÇÕES
+------------------------------------------------------------------------------------------
+
+delete produto e categoria
+ativa/desativa usuario
+atualiza nome categoria
+carrinho quase pronto
+
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+-- FAZENDO AGORA
+------------------------------------------------------------------------------------------
+
+1) CARRINHO:
+route, controller, service e model
+quando eu faço PUT http://localhost:3000/cart/[id que nao existe] retorno 202, ver isso
+
+2) PRODUTO: 
+verificar melhor o 'available' do produto
+fazer update dos campos
+
+3) USUÁRIO:
+fazer update de atualizar senha e outros campos
+seria melhor o retorno do json nao ter a senha do usuário?
+
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+-- COISAS A SE PENSAR
+------------------------------------------------------------------------------------------
+
+CATEGORIA
+    só consigo deletar categoria se não tiver produtos vinculados a ela
+    categoria precisa ter subcategorias (?)
+
+PRODUTO
+    permite cadastrar produtos iguais (seria uma boa impedir?)
+        só o admin remover
+
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+-- FAZER O FLUXO PRINCIPAL
+------------------------------------------------------------------------------------------
+
+☑ cadastro/login (admin e cliente)
+☑ listar produtos
+☑ adicionar ao carrinho
+☑ ver carrinho
+criar pedido
+gerar pagamento
+
+cart
+    adicionar produto
+    remover
+    listar carrinho
+
+order_client
+    criar pedido
+    listar pedidos do usuário
+
+order_item
+    ligado ao pedido
+
+payment
+    registrar pagamento
+
+address
+    criar endereço
+    listar do usuário
+
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+-- DEPOIS DO PRINCIPAL
+------------------------------------------------------------------------------------------
+
+arrumar o nome das funcoes de controller (verbo), service (ação) e model (query) (tem uns que estao o mesmo nos 3 arquivos)
+fazer controller, service e model
+    inventory
+    product_image
+    review
+
+------------------------------------------------------------------------------------------
