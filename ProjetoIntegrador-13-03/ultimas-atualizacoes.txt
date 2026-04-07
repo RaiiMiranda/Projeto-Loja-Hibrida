@@ -1,6 +1,0 @@
-
-estava fazendo o findByEmail do usuários usando:
-userRoutes.js
-userController.js
-userServicde.js
-userModel.js
