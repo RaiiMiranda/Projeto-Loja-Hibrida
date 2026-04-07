@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Responsividade -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <!-- Título -->
+        <title> Kithara - Meus Pedidos </title>
+    </head>
+
+    <body>
+        <!-- start header -->
+        <header>
+            <!-- start navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <img src="../img/kithara.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <a class="navbar-brand" href="index.html">Kithara</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html ">Início</a>
+                            </li>
+            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="category.html">Arcos</a></li>
+                                    <li><a class="dropdown-item" href="#">Cordas</a></li>
+                                    <li><a class="dropdown-item" href="#">Sopro</a></li>
+                                    <li><a class="dropdown-item" href="#">Áudio</a></li>
+                                    <li><a class="dropdown-item" href="#">Percurssão</a></li>
+                                    <li><a class="dropdown-item" href="#">Teclas</a></li>
+                                    <!--<li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.html">Cadastrar</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Carrinho</button>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search"/>
+                            <button class="btn btn-outline-success" type="submit">Procurar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navbar -->
+
+            <!-- start barra lateral oculta do carrinho -->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Carrinho</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                <div class="offcanvas-body">
+                    <div class="d-flex flex-column gap-3">
+                        <div class="card">
+                            <img src="../img/guitarra.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Produto 1</h5>
+                                <p>Descrição do produto</p>
+                                <p class="card-text">R$ 499,99</p>
+                                <input type="number" value="1">
+                                <button type="button" class="btn btn-primary">Remover</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="../img/guitarra.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Produto 2</h5>
+                                <p>Descrição do produto</p>
+                                <p class="card-text">R$ 499,99</p>
+                                <input type="number" value="1">
+                                <button type="button" class="btn btn-primary">Remover</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="../img/guitarra.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Produto 2</h5>
+                                <p>Descrição do produto</p>
+                                <p class="card-text">R$ 499,99</p>
+                                <input type="number" value="1">
+                                <button type="button" class="btn btn-primary">Remover</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="../img/guitarra.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Produto 2</h5>
+                                <p>Descrição do produto</p>
+                                <p class="card-text">R$ 499,99</p>
+                                <input type="number" value="1">
+                                <button type="button" class="btn btn-primary">Remover</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="../img/guitarra.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Produto 2</h5>
+                                <p>Descrição do produto</p>
+                                <p class="card-text">R$ 499,99</p>
+                                <input type="number" value="1">
+                                <button type="button" class="btn btn-primary">Remover</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Subtotal</h5>
+                                <p class="card-text">R$ 2.499,95</p>
+                                <a href="payment.html" type="button" class="btn btn-primary">Finalizar Compra</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end barra lateral oculta do carrinho -->
+             <br><br><br>
+        </header>
+        <!-- end header -->
+
+        <!-- start main -->
+        <main>
+            <!-- start principal -->
+            <div class="container d-flex justify-content-center mt-5 card mb-3" style="max-width: 540px;">
+                <div class="container-fluid mt-4">
+                    <a class="btn btn-primary" href="#" role="button">Processando</a>
+                    <a class="btn btn-primary" href="#" role="button">Enviado</a>
+                    <a class="btn btn-primary" href="#" role="button">Entregue</a>
+                    <a class="btn btn-primary" href="#" role="button">Cancelado</a>
+                </div>
+
+                <hr>
+
+                <div class="row g-0">
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <img width="50px" src="../img/guitarra.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Guitarra XXX</h5>
+                            <p class="card-text">Marca da guitarra</p>
+                            <p class="card-text">R$ 499,99</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reviewModal">Avaliar</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row g-0">
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <img width="50px" src="../img/guitarra.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Guitarra XXX</h5>
+                            <p class="card-text">Marca da guitarra</p>
+                            <p class="card-text">R$ 499,99</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reviewModal">Avaliar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- end principal -->
+
+            <br><br>
+
+            <!-- start modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Produto adicionado ao carrinho!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Você pode continuar comprando ou finalizar o pedido.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+                            <a href="payment.html" class="btn btn-primary">Finalizar o pedido</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- start modal -->
+
+            <!-- start modal review -->
+            <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Deixe a sua avaliação!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>⭐ ⭐ ⭐ ⭐ ⭐</p>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">O que achou do nosso produto?</h1>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Comentário</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- start modal review -->
+        </main>
+        <!-- end main -->
+
+        <br><br><br>
+
+        <!-- start footer -->
+        <footer>
+            <br><hr><br>
+            <p>footer virá em breve</p>
+        </footer>
+        <!-- end footer -->
+
+        <!-- start scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- end scripts -->
+    </body>
+</html>
