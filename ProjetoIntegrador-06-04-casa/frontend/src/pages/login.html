@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <title> Login - Kithara </title>
+    </head>
+
+    <body>
+        <!-- start header -->
+        <header>
+            <!-- start navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <img src="../img/kithara.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <a class="navbar-brand" href="index.html">Kithara</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html ">Início</a>
+                            </li>
+            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Arcos</a></li>
+                                    <li><a class="dropdown-item" href="#">Cordas</a></li>
+                                    <li><a class="dropdown-item" href="#">Sopro</a></li>
+                                    <li><a class="dropdown-item" href="#">Áudio</a></li>
+                                    <li><a class="dropdown-item" href="#">Percurssão</a></li>
+                                    <li><a class="dropdown-item" href="#">Teclas</a></li>
+                                    <!--<li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.html">Cadastrar</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Carrinho</button>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search"/>
+                            <button class="btn btn-outline-success" type="submit">Procurar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navbar -->
+        </header>
+        <!-- end header -->
+
+        <br> <br>
+
+        <!-- start main -->
+        <main>
+            <div class="container d-flex justify-content-center mt-5">
+                <div class="col-md-6">
+                    <h3 class="text-center mb-4">Login</h3>
+                    <form class="mb-5">
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Senha</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <input type="submit" value="Login" class="btn btn-primary">
+                        </div>
+                    </form>
+                    <div class="col-12 text-center mt-3">
+                        <p>Esqueceu a senha? <a href="#">Clique aqui para recuperá-la</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <br> <br>
+
+            <h3 class="text-center mb-4">Ainda não tem cadastro?</h3>
+            <div class="col-12 text-center mt-3">
+                <a href="register.html" class="btn btn-primary">Cadastrar</a>
+            </div>
+        </main>
+        <!-- end main -->
+
+       <!-- start footer -->
+        <footer>
+            <br><hr><br>
+            <p>footer virá em breve</p>
+        </footer>
+        <!-- end footer -->
+
+        <!-- start scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- end scripts -->
+    </body>
+</html>
