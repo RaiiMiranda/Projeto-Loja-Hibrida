@@ -17,6 +17,8 @@ usar esse    -> E-commerce 2 -> https://www.youtube.com/watch?v=qSHHOjXouI4
 lista to do  -> https://www.youtube.com/watch?v=JvrenJBnjnQ
 autenticacao -> https://www.youtube.com/watch?v=-v8zHjXGRxo
 
+login/logout -> https://www.youtube.com/watch?v=inl14KFmers
+
 
 ------------------------------------------------------------------------------------------------------------------------
 -- FRONTEND
