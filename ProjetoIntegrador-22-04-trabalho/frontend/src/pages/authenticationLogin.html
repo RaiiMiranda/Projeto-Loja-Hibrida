@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <title> Login - Kithara </title>
+    </head>
+
+    <body>
+        <!-- start header -->
+        <header>
+            <!-- start navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <img src="../img/kithara.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <a class="navbar-brand" href="index.html">Kithara</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="category.html">Arcos</a></li>
+                                    <li><a class="dropdown-item" href="#">Cordas</a></li>
+                                    <li><a class="dropdown-item" href="#">Sopro</a></li>
+                                    <li><a class="dropdown-item" href="#">Áudio</a></li>
+                                    <li><a class="dropdown-item" href="#">Percurssão</a></li>
+                                    <li><a class="dropdown-item" href="#">Teclas</a></li>
+                                    <!--<li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="authenticationRegister.html">Cadastrar</a></li>
+                            <li class="nav-item"><a class="nav-link" href="authenticationLogin.html">Login</a> </li>
+                            
+                            <li class="nav-item">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navbar -->
+        </header>
+        <!-- end header -->
+
+        <br> <br>
+
+        <!-- start main -->
+        <main>
+            <div class="container d-flex justify-content-center mt-5">
+                <div class="col-md-6">
+                    <h3 class="text-center mb-4">Login</h3>
+
+                    <form class="mb-5" id="loginForm" method="POST" action="http://localhost:3000/auth/login">
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Senha</label>
+                            <input type="password" class="form-control" name="password">
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <input type="submit" value="Login" class="btn btn-primary">
+                        </div>
+                    </form>
+                    <div class="col-12 text-center mt-3">
+                        <p>Esqueceu a senha? <a href="#">Clique aqui para recuperá-la</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <br> <br>
+
+            <h3 class="text-center mb-4">Ainda não tem cadastro?</h3>
+            <div class="col-12 text-center mt-3">
+                <a href="register.html" class="btn btn-primary">Cadastrar</a>
+            </div>
+        </main>
+        <!-- end main -->
+
+       <!-- start footer -->
+        <footer>
+            <br><hr><br>
+            <p>footer virá em breve</p>
+        </footer>
+        <!-- end footer -->
+
+        <!-- start scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+        <script>
+            document.getElementById("loginForm").addEventListener("submit", async function(e) {
+                e.preventDefault(); // impede reload da página
+
+                const email = document.querySelector('input[name="email"]').value;
+                const password = document.querySelector('input[name="password"]').value;
+
+                try {
+                    const response = await fetch("http://localhost:3000/auth/login", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({ email, password })
+                    });
+
+                    const data = await response.json();
+
+                    if (!response.ok) {
+                        alert(data.error);
+                        return;
+                    }
+
+                    localStorage.setItem("user", JSON.stringify(data.user));
+                    localStorage.setItem("token", data.token);
+
+                    window.location.href = "index.html";
+
+                } catch (error) {
+                    console.error(error);
+                    alert("Erro ao fazer login");
+                }
+            });
+        </script>
+        <!-- end scripts -->
+    </body>
+</html>
