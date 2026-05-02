@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <title> Kithara </title>
+    </head>
+
+    <body>
+        <!-- start header -->
+        <header>
+            <!-- start navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <img src="../img/kithara.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <a class="navbar-brand" href="index.html">Kithara</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html ">Início</a>
+                            </li>
+            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Arcos</a></li>
+                                    <li><a class="dropdown-item" href="#">Cordas</a></li>
+                                    <li><a class="dropdown-item" href="#">Sopro</a></li>
+                                    <li><a class="dropdown-item" href="#">Áudio</a></li>
+                                    <li><a class="dropdown-item" href="#">Percurssão</a></li>
+                                    <li><a class="dropdown-item" href="#">Teclas</a></li>
+                                    <!--<li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.html">Cadastrar</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Carrinho</button>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search"/>
+                            <button class="btn btn-outline-success" type="submit">Procurar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navbar --> 
+        </header>
+        <!-- end header -->
+
+        <!-- start main -->
+        <main>
+            <br><br>
+            <div class="container d-flex justify-content-center mt-5 card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img id="productImage" class="img-fluid rounded-start">
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 id="productName" class="card-title"></h5>
+                            <p>⭐ ⭐ ⭐ ⭐ ⭐</p>
+                            <p id="productBrand" class="card-text"></p>
+                            <p id="productCondition" class="card-text"></p>
+                            <p id="productPrice"></p>
+                            <p class="card-text"><small class="text-body-secondary">Em até x vezes</small></p>
+
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Adicionar ao carrinho</button>
+                            <a href="payment.html" class="btn btn-secondary">Comprar agora</a>
+                            
+                            <br><br><p>Quantidade em estoque: XXX</p>
+
+                            <input type="text" placeholder="Simule o frete inserindo seu CEP">
+                            <a href="#" class="btn btn-primary">Calcular Frete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- start details -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <!-- start product description -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Descrição
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <p class="accordion-body" id="productDescription"></p>
+                    </div>
+                </div>
+                <!-- end product description -->
+
+                <!-- start reviews -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Avaliações
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-header">
+                                    <p>Nome do Avaliador</p>
+                                    <p>XX/XX/XXXX</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">⭐ ⭐ ⭐ ⭐ ⭐</li>
+                                    <li class="list-group-item">Comentário do cliente</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end reviews -->
+            </div>
+            <!-- end details -->
+
+            <!-- start produtos similares -->
+            <br><br><h3>Produtos Similares</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="../img/guitarra.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Guitarra</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../img/guitarra.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Guitarra</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../img/guitarra.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Guitarra</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end produtos similares -->
+
+            <!-- start modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Produto adicionado ao carrinho!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Você pode continuar comprando ou finalizar o pedido.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+                            <a href="payment.html" class="btn btn-primary">Finalizar o pedido</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- start modal -->
+        </main>
+        <!-- end main -->
+
+        <!-- start footer -->
+        <footer>
+            <br><hr><br>
+            <p> footer vai vir ainda </p>
+        </footer>
+        <!-- end footer -->
+
+        <!-- start scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+        <script>
+            // Pegando id da URL
+            const params = new URLSearchParams(window.location.search);
+            const productId = params.get("id");
+
+            // Buscando o produto no backend
+            async function loadProduct() {
+                try {
+                    const response = await fetch(`http://localhost:3000/product/${productId}`);
+                    const product = await response.json();
+
+                    console.log(product);console.log(product.image_url);
+
+                    document.getElementById("productName").innerText = product.name;
+                    document.getElementById("productBrand").innerText = product.brand;
+                    document.getElementById("productCondition").innerText = product.condition;
+                    document.getElementById("productPrice").innerText = `R$ ${product.price}`;
+                    document.getElementById("productDescription").innerText = product.description;
+                    document.getElementById("productImage").src = `http://localhost:3000${product.image_url}`;
+
+                } catch (error) {
+                    console.error("Erro ao carregar produto:", error);
+                }
+            }
+
+            loadProduct();
+        </script>
+        <!-- end scripts -->
+    </body>
+</html>
