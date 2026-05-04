@@ -1,0 +1,30 @@
+HEADER
+no header do arquivo:
+
+<!-- start header -->
+    <div id="header"></div>
+<!-- end header -->
+
+
+no final do arquivo:
+
+<script src="../js/header.js"></script>
+<script>
+    async function loadHeader() {
+        const response = await fetch("../components/header.html");
+        const data = await response.text();
+        document.getElementById("header").innerHTML = data;
+        
+        initHeader();
+    }
+
+    loadHeader();
+</script>
+
+
+FOOTER
+no footer do arquivo:
+
+
+
+no final do arquivo:

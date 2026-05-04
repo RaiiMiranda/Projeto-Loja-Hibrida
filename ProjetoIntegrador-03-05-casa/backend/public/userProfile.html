@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Responsividade -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <!-- Título -->
+        <title> Kithara - Loja de Instrumentos </title>
+    </head>
+
+    <body>
+        <!-- start header -->
+        <div id="header"></div>
+        <!-- end header -->
+
+        <!-- start main -->
+        <main>
+            <!-- start principal -->
+            <div class="container-fluid mt-4"> <br><br>
+                <div class="row">
+                    <!-- start filtro -->
+                    <div class="col-md-3">
+                        <div class="filtro border rounded p-3 shadow-sm bg-light">
+                            <h3>Minha Conta</h3>
+                            <div class="list-group">
+                                <a href="userProfile.html" class="list-group-item list-group-item-action active" aria-current="true">Perfil</a>
+                                <a href="userOrders.html" class="list-group-item list-group-item-action">Meus Pedidos</a>
+                                <a href="userShopping.html" class="list-group-item list-group-item-action">Minhas compras</a>
+                                <a href="userReviews.html" class="list-group-item list-group-item-action">Minhas avaliações</a>
+                                <a href="userAddress.html" class="list-group-item list-group-item-action">Endereços</a>
+
+                                <a href="#" class="list-group-item list-group-item-action">Sair</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end filtro -->
+
+                    <!-- start users -->
+                    <div class="col-md-9">
+                        <h3 class="mb-4">Perfil</h3>
+
+                        <p>Nome do Usuário</p>
+                        <p>Email: cliente@gmail.com</p>
+
+                        <br><br>
+
+                        <h3 class="mb-4">Atualizar Perfil</h3>
+                        <form action="">
+                            <label for="">Nome</label>
+                            <input type="text" name="" id="">
+
+                            <label for="">Email</label>
+                            <input type="email" name="" id="">
+
+                            <label for="">Confirmar Email</label>
+                            <input type="email" name="" id="">
+
+                            <label for="">Telefone</label>
+                            <input type="tel" name="" id="">
+
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+
+                        <br><br>
+
+                        <h3 class="mb-4">Atualizar Senha</h3>
+                        <form action="">
+                            <label for="">Senha Atual</label>
+                            <input type="text" name="" id="">
+
+                            <label for="">Nova Senha</label>
+                            <input type="email" name="" id="">
+
+                            <label for="">Confirmar Nova Senha</label>
+                            <input type="email" name="" id="">
+
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                    <!-- end users -->
+                </div>
+            </div>
+            <!-- end principal -->
+        </main>
+        <!-- end main -->
+
+        <!-- start footer -->
+        <footer>
+            <br><hr><br>
+            <p>footer virá em breve</p>
+        </footer>
+        <!-- end footer -->
+
+        <!-- start scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+        <!-- scripts para carregar o header -->
+        <script src="../js/header.js"></script>
+        <script>
+            async function loadHeader() {
+                const response = await fetch("../components/header.html");
+                const data = await response.text();
+                document.getElementById("header").innerHTML = data;
+                
+                initHeader();
+            }
+
+            loadHeader();
+        </script>
+        <!-- end scripts -->
+    </body>
+</html>
