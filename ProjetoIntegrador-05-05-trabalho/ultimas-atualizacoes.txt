@@ -1,0 +1,146 @@
+
+site bonito: https://www.krunner.com.br/
+
+------------------------------------------------------------------------------------------
+-- FAZENDO AGORA
+------------------------------------------------------------------------------------------
+
+
+TAVA MEXENDO NO PAYMENT.HTML, TENTANDO FAZER O PEDIDO
+na real que quando o pedido é criado o carrinho é apagado, entao nao faz sentido eu usar
+a rota de cart no js que estava fazendo
+tenho que mexer com as rotas de order agora
+
+
+
+Fluxo principal funcionando do backend com o frontend:
+    PRIMEIRO TELAS DO CLIENTE
+    ☑ Cadastro/Login - redireciona
+    ☑ Logout de usuário
+    ☑ Visualização de produtos e categorias dinamicamente
+    Criar pedido
+    Tela de pagamento
+    Status do pedido
+
+    DEPOIS TELAS DE ADMIN E VENDEDOR
+    colocar graficos, pesquisar sobre Chart.js
+
+
+Criar pedido com itens do pedido e finalizar com pagamento
+Atualizar campos de produto e usuário (reset de senha)
+
+
+arrumar o filtro nas outras páginas, deixar igual o do index.html
+arrumar o modal de "Produto adicionado ao carrinho" deixando igual ao do instruments.html
+arrumar o "Produtos Similares" deixar dinâmico também
+
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+-- ÚLTIMAS ATUALIZAÇÕES
+------------------------------------------------------------------------------------------
+
+o banco está desatualizado, nao tem o SEMINOVO e provavelmente outras atualizacoes
+
+meu login ainda permite 4 caracteres pra senha
+
+***IMPORTANTE PRA AGORA
+
+AGORA PRECISO FAZER O PAYMENT.HTML TER OS DADOS DO USER LOGADO
+DEPOIS ADMIN CONSEGUIR CRIAR, EDITAR e EXCLUIR, PRODUTOS e Categorias
+    ALÉM DE CONSEGUIR MUDAR STATUS Pedidos
+    OU SEJA, ALGUMAS PÁGINAS DO ADMIN FUNFANDO
+
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+-- ENTENDER MELHOR SOBRE
+------------------------------------------------------------------------------------------
+
+
+arquivos de CART (model principalmente getByUser) e ORDER backend
+
+
+
+hash e sha da senha (ela nao ta sendo criptografada)
+app.use(express.urlencoded({ extended: true })); 
+    // por causa do form nao enviar em json pro backend
+
+☑ estudar os scripts dos arquivos:
+    index, authenticationLogin, authenticationRegister, instruments, category, header.js, 
+    header.html
+
+
+mudei tambem algumas funcoes do model do produto
+autenticacao
+
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+-- COISAS A SE PENSAR
+------------------------------------------------------------------------------------------
+
+Produto: verificar melhor o 'available'
+Usuário: retorno json deveria ter a senha do usuário?
+
+
+CATEGORIA
+    só consigo deletar categoria se não tiver produtos vinculados a ela
+    categoria precisa ter subcategorias (?)
+
+PRODUTO
+    permite cadastrar produtos iguais (seria uma boa impedir?)
+        só o admin remover
+
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+-- FAZER O FLUXO PRINCIPAL
+------------------------------------------------------------------------------------------
+
+☑ cadastro/login (admin e cliente)
+☑ listar produtos
+☑ adicionar ao carrinho
+☑ ver carrinho
+criar pedido
+gerar pagamento
+
+cart
+    adicionar produto
+    remover
+    listar carrinho
+
+order_client
+    criar pedido
+    listar pedidos do usuário
+
+order_item
+    ligado ao pedido
+
+payment
+    registrar pagamento
+
+address
+    criar endereço
+    listar do usuário
+
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+-- DEPOIS DO PRINCIPAL
+------------------------------------------------------------------------------------------
+
+arrumar o nome das funcoes de controller (verbo), service (ação) e model (query) 
+(tem uns que estao o mesmo nos 3 arquivos)
+
+fazer controller, service e model
+    inventory
+    product_image
+    review
+
+------------------------------------------------------------------------------------------
