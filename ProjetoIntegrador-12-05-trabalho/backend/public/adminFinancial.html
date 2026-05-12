@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Responsividade -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <!-- Título -->
+        <title> Kithara - Loja de Instrumentos </title>
+    </head>
+
+    <body>
+        <!-- start header -->
+        <header>
+            <!-- start navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <img src="../img/kithara.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <a class="navbar-brand" href="index.html">Kithara</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- end navbar -->
+        </header>
+        <!-- end header -->
+
+        <!-- start main -->
+        <main>
+            <!-- start principal -->
+            <div class="container-fluid mt-5 pt-3">
+                <div class="row">
+                    <!-- start filtro -->
+                    <div class="col-md-3">
+                        <div class="filtro border rounded p-3 shadow-sm bg-light">
+                            <h3>Admin Portal</h3>
+                            
+                            <!-- start painel admin dinâmico -->
+                            <div id="listGroup"></div>
+                            <!-- end painel admin dinâmico -->
+                        </div>
+                    </div>
+                    <!-- end filtro -->
+
+                    <!-- start financial -->
+                    <div class="col-md-9">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h3 class="mb-0">Painel Financeiro</h3>
+
+                            <!-- ações -->
+                            <div class="d-flex flex-wrap gap-2 justify-content-end">
+                                <button type="button" class="btn btn-primary">Exportar PDF</button>
+                                <button type="button" class="btn btn-primary">Exportar Excel</button>
+                            </div>
+                        </div>
+
+                        <!-- start filtros -->
+                        <div class="card border-1 mb-4">
+                            <div class="card-body">
+                                <div class="row g-3 align-items-end">
+                                    <!-- data início -->
+                                    <div class="col-md-3">
+                                        <label class="form-label fw-semibold">Data Início</label>
+                                        <input type="date" id="startDate">
+                                    </div>
+
+                                    <!-- data fim -->
+                                    <div class="col-md-3">
+                                        <label class="form-label fw-semibold">Data Fim</label>
+                                        <input type="date" id="endDate">
+                                    </div>
+
+                                    <!-- botões -->
+                                    <div class="col-md-2 d-flex gap-2">
+                                        <button class="btn btn-primary w-100">Filtrar</button>
+                                        <button class="btn btn-outline-secondary w-100">Limpar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end filtros -->
+
+                        <!-- start indicadores -->
+                        <div class="row g-3">
+                            <div class="col-md-3">
+                                <div class="card p-3">
+                                    <h6>Receitas</h6>
+                                    <h4>R$ X.XXX</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card p-3">
+                                    <h6>Despesas</h6>
+                                    <h4>R$ X.XXX</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card p-3">
+                                    <h6>Lucro Líquido</h6>
+                                    <h4>R$ X.XXX</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card p-3">
+                                    <h6>Ticket Médio</h6>
+                                    <h4>R$ X.XXX</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end indicadores -->
+
+                        <!-- start fluxo de caixa -->
+                        <h5 class="mt-4">Fluxo de Caixa</h5>
+                        <p>Entradas e saídas do período selecionado.</p>
+
+                        <div class="card p-3 mb-4">
+                            <p><strong>Entradas:</strong> R$ X.XXX</p>
+                            <p><strong>Saídas:</strong> R$ X.XXX</p>
+                            <p><strong>Saldo:</strong> R$ X.XXX</p>
+                        </div>
+                        <!-- end fluxo de caixa -->
+
+                        <!-- start gráficos -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card p-3">
+                                    <h6>Entradas x Saídas</h6>
+                                    <canvas id="graficoFluxo"></canvas>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card p-3">
+                                    <h6>Formas de Pagamento</h6>
+                                    <canvas id="graficoPagamentos"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end gráficos -->
+
+                        <!-- start despesas -->
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h5 class="mt-4">Despesas</h5>
+
+                            <div class="d-flex flex-wrap gap-2 justify-content-end">
+                                <button class="btn btn-primary">Nova Despesa</button>
+                            </div>
+                        </div>
+
+                        <!-- start indicadores -->
+                        <div class="row g-3">
+                            <div class="col-md-3">
+                                <div class="card p-3">
+                                    <h6>Pendente</h6>
+                                    <h4>R$ X.XXX</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card p-3">
+                                    <h6>Pago</h6>
+                                    <h4>R$ X.XXX</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card p-3">
+                                    <h6>Atrasado</h6>
+                                    <h4>R$ X.XXX</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card p-3">
+                                    <h6>Total Geral</h6>
+                                    <h4>R$ X.XXX</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end indicadores -->
+                        
+                        <div class="table-responsive mt-5">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Descrição</th>
+                                        <th>Categoria</th>
+                                        <th>Valor</th>
+                                        <th>Vencimento</th>
+                                        <th>Status</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Internet</td>
+                                        <td>Operacional</td>
+                                        <td>R$ 200</td>
+                                        <td>10/05</td>
+                                        <td>Pendente/Pago/Atrasado</td>
+                                        <td>
+                                            <button class="btn btn-secondary">Editar</button>
+                                            <button class="btn btn-secondary">Excluir</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- end despesas -->
+                    </div>
+                    <!-- end financial -->
+                </div>
+            </div>
+            <!-- end principal -->
+        </main>
+
+        <!-- start scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+        <!-- scripts para carregar o list group -->
+        <script src="../js/adminPortal.js"></script>
+        <script>
+            async function loadListGroup() {
+                const response = await fetch("../components/adminPortal.html"); // pedindo o adminPortal
+                const data = await response.text();                             // converte o pedido para texto HTML
+                document.getElementById("listGroup").innerHTML = data;          // injetando o adminPortal.html
+                
+                initListGroup();
+            }
+
+            // Chamando a função assim que carrega a página
+            loadListGroup(); 
+        </script>
+        <!-- end scripts -->
+    </body>
+</html>

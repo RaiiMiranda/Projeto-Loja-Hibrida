@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Responsividade -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <!-- Título -->
+        <title> Kithara - Loja de Instrumentos </title>
+    </head>
+
+    <body>
+        <!-- start header -->
+        <header>
+            <!-- start navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <img src="../img/kithara.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <a class="navbar-brand" href="index.html">Kithara</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- end navbar -->
+        </header>
+        <!-- end header -->
+
+        <!-- start main -->
+        <main>
+            <!-- start principal -->
+            <div class="container-fluid mt-5 pt-3">
+                <div class="row">
+                    <!-- start filtro -->
+                    <div class="col-md-3">
+                        <div class="filtro border rounded p-3 shadow-sm bg-light">
+                            <h3>Admin Portal</h3>
+                            
+                            <!-- start painel admin dinâmico -->
+                            <div id="listGroup"></div>
+                            <!-- end painel admin dinâmico -->
+                        </div>
+                    </div>
+                    <!-- end filtro -->
+
+                    <!-- start estoque -->
+                    <div class="col-md-9">
+                        <h3 class="mb-4">Estoque</h3>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalNewProduct">Salvar Alterações</button><br><br>
+
+                        <!-- start filtros -->
+                        <div class="card border-1 mb-4">
+                            <div class="card-body">
+                                <div class="row g-3 align-items-end">
+                                    <!-- pesquisa -->
+                                    <div class="col-md-4">
+                                        <label class="form-label fw-semibold">Pesquisar Produto</label>
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Digite o nome do produto">
+                                            <button class="btn btn-success" type="submit">Procurar</button>
+                                        </form>
+                                    </div>
+
+                                    <!-- status -->
+                                    <div class="col-md-3">
+                                        <label class="form-label fw-semibold">Filtro</label>
+                                        <select class="form-select">
+                                            <option value="1">Todos produtos</option>
+                                            <option value="2">Produtos mais vendidos</option>
+                                            <option value="3">Sem estoque</option>
+                                            <option value="4">Disponível</option>
+                                            <option value="5">Indisponível</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- botões -->
+                                    <div class="col-md-2 d-flex gap-2">
+                                        <button class="btn btn-primary w-100">Filtrar</button>
+                                        <button class="btn btn-outline-secondary w-100">Limpar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end filtros -->
+
+                        <!-- start tabela -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Produto</th>
+                                        <th scope="col">SKU</th>
+                                        <th scope="col">Preço (R$)</th>
+                                        <th scope="col">Estoque</th>
+                                    </tr>
+                                </thead>
+
+                                <!-- start lista produtos dinâmicos -->
+                                <tbody id="productsTable">
+                                    <td>Teclado Yamaha PSR-E373</td>
+                                    <td><input type="text" placeholder="[Marca]-[Modelo]-[Cor]-[Tipo]"></td>
+                                    <td><input type="text" placeholder="0.000,00"></td>
+                                    <td><input type="text" placeholder="00"></td>
+                                </tbody>
+                                <!-- end lista produtos dinâmicos -->
+                            </table>
+                        </div>
+                        <!-- end tabela -->
+
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                                <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+                                <li class="page-item"><a class="page-link" href="#" aria-current="page">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+                            </ul>
+                        </nav>
+                    <!-- end estoque -->
+                </div>
+            </div>
+            <!-- end principal -->
+
+            <br><br>
+        </main>
+        <!-- end main -->
+
+        <!-- start scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+        <!-- scripts para carregar o list group -->
+        <script src="../js/adminPortal.js"></script>
+        <script>
+            async function loadListGroup() {
+                const response = await fetch("../components/adminPortal.html"); // pedindo o adminPortal
+                const data = await response.text();                             // converte o pedido para texto HTML
+                document.getElementById("listGroup").innerHTML = data;          // injetando o adminPortal.html
+                
+                initListGroup();
+            }
+
+            // Chamando a função assim que carrega a página
+            loadListGroup(); 
+        </script>
+        <!-- end scripts -->
+    </body>
+</html>

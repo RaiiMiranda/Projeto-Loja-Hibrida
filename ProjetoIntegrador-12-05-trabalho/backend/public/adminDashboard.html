@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Responsividade -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <!-- Título -->
+        <title> Kithara - Loja de Instrumentos </title>
+    </head>
+
+    <body>
+        <!-- start header -->
+        <header>
+            <!-- start navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <img src="../img/kithara.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <a class="navbar-brand" href="index.html">Kithara</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- end navbar -->
+        </header>
+        <!-- end header -->
+
+        <!-- start main -->
+        <main>
+            <!-- start principal -->
+            <div class="container-fluid mt-5 pt-3">
+                <div class="row">
+                    <!-- start filtro -->
+                    <div class="col-md-3">
+                        <div class="filtro border rounded p-3 shadow-sm bg-light">
+                            <h3>Admin Portal</h3>
+
+                            <!-- start painel admin dinâmico -->
+                            <div id="listGroup"></div>
+                            <!-- end painel admin dinâmico -->
+                        </div>
+                    </div>
+                    <!-- end filtro -->
+
+                    <!-- start dashboard -->
+                    <div class="col-md-9">
+                        <h3 class="mb-4">Dashboard Geral</h3>
+
+                        <!-- start indicadores principais -->
+                        <div class="row g-3">
+                            <div class="col-md-3">
+                                <div class="card p-3">
+                                    <h6>Pedidos Hoje</h6>
+                                    <h4>XX</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card p-3">
+                                    <h6>Total de Pedidos</h6>
+                                    <h4>XXXX</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card p-3">
+                                    <h6>Usuários Ativos</h6>
+                                    <h4>XX</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card p-3">
+                                    <h6>Produtos Cadastrados</h6>
+                                    <h4>XX</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end indicadores principais -->
+
+                        <!-- start resumo operacional -->
+                        <h5 class="mt-4">Resumo Operacional</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card p-3">
+                                    <h6>Status dos Pedidos</h6>
+                                    <p>Pendentes: XX</p>
+                                    <p>Pagos: XX</p>
+                                    <p>Separando: XX</p>
+                                    <p>Enviado: XX</p>
+                                    <p>Entregue: XX</p>
+                                    <p>Cancelados: XX</p>
+                                    <p>Extraviados: XX</p>
+                                    <p>Devolvidos: XX</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card p-3">
+                                    <h6>Top 5 Produtos Mais Vendidos</h6>
+                                    <p>1. Nome: XXXX | Quantidade: XX</p>
+                                    <p>2. Nome: XXXX | Quantidade: XX</p>
+                                    <p>3. Nome: XXXX | Quantidade: XX</p>
+                                    <p>4. Nome: XXXX | Quantidade: XX</p>
+                                    <p>5. Nome: XXXX | Quantidade: XX</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end resumo operacional -->
+
+                        <!-- start gráficos -->
+                        <h5 class="mt-4">Visão Geral</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card p-3">
+                                    <h6>Vendas por Mês</h6>
+                                    <canvas id="graficoVendas"></canvas>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card p-3">
+                                    <h6>Status dos Pedidos</h6>
+                                    <canvas id="graficoStatus"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end gráficos -->
+                    </div>
+                    <!-- end dashboard -->
+                </div>
+            </div>
+            <!-- end principal -->
+        </main>
+        <!-- end main -->
+
+        <!-- start scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+        <!-- scripts para carregar o list group -->
+        <script src="../js/adminPortal.js"></script>
+        <script>
+            async function loadListGroup() {
+                const response = await fetch("../components/adminPortal.html"); // pedindo o adminPortal
+                const data = await response.text();                             // converte o pedido para texto HTML
+                document.getElementById("listGroup").innerHTML = data;          // injetando o adminPortal.html
+                
+                initListGroup();
+            }
+
+            // Chamando a função assim que carrega a página
+            loadListGroup(); 
+        </script>
+        <!-- end scripts -->
+    </body>
+</html>

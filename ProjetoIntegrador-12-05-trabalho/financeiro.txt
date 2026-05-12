@@ -1,0 +1,32 @@
+Relatórios
+
+1. Relatório Financeiro
+Filtros
+  Data Inicio  Data Fim  Tipo de relatório (Diário, Semanal, Mensal, Anual)
+Botao pra filtrar E limpar filtro
+
+Resultados do filtro
+Total Receitas
+Total Despesas
+Lucro Líquido (total receitas - total despesas)
+Ticket Médio
+
+Fluxo de Caixa: https://www.planilhadefluxo.com.br/como-fazer-fluxo-de-caixa
+
+botao pra exportar PDF, EXCEL
+
+
+2. Relatório Geral com Despesas
+Despesas Mensais
+ Despesas a pagar
+ Despesas quitadas
+ Despesas em atraso
+ Todas as despesas do período
+
+ADMIN pode adicionar as despesas
+
+Lista de Despesas
+Descricao  Categoria  Valor  Vencimento  Pagamento  Status (venceu, ainda nao venceu, pago)  Obs  Ações
+
+
+

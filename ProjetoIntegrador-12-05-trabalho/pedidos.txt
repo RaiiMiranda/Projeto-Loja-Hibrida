@@ -1,0 +1,53 @@
+Cliente clica em finalizar pedido pelo carrinho: momento que criar o pedido no banco de dados
+  Registra no order_client o ID do pedido com status Pendente
+  Move os dados do cart e insere na tabela order_item
+  Reserva estoque, soma a quantidade comprada ao campo reserved do inventory
+  Cria o registro no payment, gera a entrada do metodo de pagamento como Pendente
+  Limpa o carrinho
+
+
+Pendente: 
+  Admin: Pedido aparece no painel como Pendente. Entra no banco de dados e fica no estoque reservado até pagamento aprovado
+  Cliente: "Recebemos seu pedido. Aguardamos o pagamento". Sistema aguarda pagamento.
+
+Pago: 
+  Admin: baixar o estoque e liberar o botão para emissão da Nota Fiscal, e anexa e/ou envia (invoice_url) para o cliente baixar
+  Cliente: "Pagamento Confirmado". Consegue baixar ou receber por e-mail a nf
+
+Separando:
+  Admin: Saiu do escritório e foi para estoque, imprimir etiquetas (leva pra uma página com dados) e embalar.
+  Cliente: "Preparando Envio"
+
+Enviado:
+  Admin: Inserir código de rastreio (campo obrigatório), pedido sai da responsabilidade da loja e passa para a transportadora
+  Cliente: "Seu pedido está a caminho". Recebe link de rastreio para acompanhar a entrega
+
+Entregue:
+  Admin: Pedir avaliação do produto
+  Cliente: "Entregue". Confirmação final dele.
+
+Cancelado:
+  Admin: Estoque reservado retorna pra a prateleira. Vê o motivo do cancelamento e estornar pagamento.
+  Cliente: "Pedido Cancelado". Relatar motivo e comprovante de estorno.
+
+Extraviado
+  Admin: Status crítico. Deve abrir reclamação com a transportadora e decidir se envia novo produto ou reembolsa o cliente
+  Cliente: "Problema na entrega". 
+
+
+
+Regras:
+Um pedido Enviado não pode voltar para Pendente
+Pedido cancelado nao pode ser reaberto
+Botao salvar alterações enviar um e-mail automático da alteração
+
+
+
+API: Melhor Envio
+Quando o Admin clicar em "Gerar Etiqueta" no painel:
+Request: Seu backend chama a API externa enviando os dados do address e do product
+Response: Você recebe o código
+Update: Você faz um UPDATE order_client SET tracking_code = 'CODIGO_RECEBIDO', status = 'ENVIADO' WHERE id = X
+
+Para a API calcular o frete e gerar a etiqueta, precisa ter peso e as dimensões (comprimento, largura, altura) da caixa
+Precisa ter peso e tamanho na tabela de product
