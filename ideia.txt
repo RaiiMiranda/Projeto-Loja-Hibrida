@@ -1,0 +1,39 @@
+Ideia do Jogo
+RPG de simulação
+Top-down
+
+Funcionalidades
+Interagir com NPCs (escolhas simples de relacionamento)
+Comprar sementes (3 tipos iniciais: batata (rapido), tomate (medio) e cenoura(lento))
+Plantar
+Regar
+Esperar crescer
+Colher
+Vender colheita
+Dormir (salvar progresso)
+
+Progresso
+Por dias dormidos
+Relacionamentos com NPCs
+Fim do jogo?
+
+Diferenciais
+
+
+Relatórios
+
+
+Inspirações
+Stardew Valley
+
+API REST e Gamemaker
+Cadastro/Login (JWT)
+Lógica do jogo no GameMaker
+API de Clima Real (OpenWeatherMap)
+API do Discord (Rich Presence)
+API de Tradução (Google Translate ou LibreTranslate)
+API de Notificações (E-mail boas-vindas)
+
+Assets
+Itch.io
+Pixabay
