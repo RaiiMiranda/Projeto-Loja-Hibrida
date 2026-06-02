@@ -1,3 +1,125 @@
+Para um **Projeto Integrador de ADS**, eu recomendaria **um jogo estilo Brotato** na maioria dos casos.
+
+Vamos comparar pensando no que o professor provavelmente vai avaliar.
+
+| Critério                    | Stardew Valley              | Brotato         |
+| --------------------------- | --------------------------- | --------------- |
+| Complexidade                | Muito alta                  | Média           |
+| Tempo de desenvolvimento    | Longo                       | Curto           |
+| Quantidade de sistemas      | Muitas mecânicas diferentes | Menos mecânicas |
+| Facilidade de concluir      | Difícil                     | Mais fácil      |
+| Demonstração de programação | Boa                         | Muito boa       |
+| Risco de projeto incompleto | Alto                        | Baixo           |
+
+## Se fizer um Stardew Valley
+
+Você precisará desenvolver:
+
+* Sistema de inventário
+* Plantio
+* Crescimento de culturas
+* Economia
+* NPCs
+* Diálogos
+* Relacionamentos
+* Ciclo de dia/noite
+* Salvar progresso
+* Mapas maiores
+* IA de NPCs
+* Loja
+
+Mesmo uma versão simplificada pode ficar grande demais para um semestre.
+
+---
+
+## Se fizer um Brotato
+
+Você pode focar mais na parte técnica:
+
+### Mecânicas principais
+
+* Movimento do personagem
+* Inimigos surgindo em ondas
+* IA simples
+* Sistema de armas
+* Upgrades
+* Progressão
+* Loja entre rodadas
+* Estatísticas do jogador
+
+### APIs e banco de dados
+
+Você ainda consegue usar:
+
+* Login/JWT
+* Ranking online
+* Salvamento de progresso
+* Estatísticas dos jogadores
+* Leaderboard
+* Discord Rich Presence
+
+Isso costuma impressionar mais porque mostra integração entre jogo e sistemas web.
+
+---
+
+## Uma ideia interessante
+
+### "Brotato Online"
+
+* Login com JWT
+* Ranking global
+* Estatísticas armazenadas em banco
+* Histórico de partidas
+* Conquistas
+* Discord Rich Presence
+
+Relatórios:
+
+* Jogador com maior pontuação
+* Arma mais utilizada
+* Inimigo mais derrotado
+* Tempo médio de sobrevivência
+
+Isso conversa muito bem com os conteúdos de ADS:
+
+* Banco de dados
+* APIs REST
+* Autenticação
+* Estatística
+* Relatórios
+* Consumo de APIs
+
+---
+
+## O que eu faria
+
+Se o objetivo é **tirar uma nota alta e garantir que o projeto fique pronto**, escolheria um **roguelike survivor estilo Brotato/Vampire Survivors**.
+
+Se o objetivo é **ter um jogo mais bonito e divertido para portfólio**, escolheria o Stardew Valley simplificado.
+
+Para um Projeto Integrador, geralmente vale mais um projeto **100% concluído e polido** do que um Stardew Valley que termina com metade das funcionalidades planejadas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Projeto Integrador – Farm Game
 
 -- Descrição do Projeto
