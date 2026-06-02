@@ -1,6 +1,29 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- Projeto Integrador - Estilo Brotato
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- jogo de tiro twin-stick em arena estilo roguelite top-down
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- tem uma batata que enfrenta alienígenas em ondas cronometradas
+-- objetivo sobreviver as ondas, coletar recursos, aprimorar seu personagem e derrotar o chefão na onda final
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Jogos de tiro twin-stick é um subgênero de jogos de tiro onde o movimento do personagem e a mira são controladas de forma independente usando dois sticks de um controle
+stick esquerdo ou WASD (movimento)
+stick direito ou mouse (direção disparos)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- Jogabilidade
+  jogador controla o personagem e os tiros são disparados automaticamente nos inimigos no campo de visão
+  dura 20 ondas, em cada uma o jogador deve fugir dos inimigos, desviar dos projéteis deles e coletar os materiais dropados por eles
+  pode equipar até 6 armas, podendo ser melhoradas para causar mais dano ou ter efeitos especiais
+  tem uma loja entre uma onda e outra, onde gasta os materiais coletados para:
+    comprar novas armas
+    itens de cura
+    melhorias de atributos (vida, armadura, velocidade de ataque, ...)
+    perks (vantagens passivas)
+  ao derrotar os inimigos ganha pontos de experiência para subir de nível, cada vez que sobre pode escolher opções de atributos para melhorar o personagem
+  tem diversas de personagens diferentes, cada um com suas vantagens e desvantagens
 
 -- Mecânicas principais
   Movimento do personagem
@@ -25,6 +48,10 @@
   Arma mais utilizada
   Inimigo mais derrotado
   Tempo médio de sobrevivência
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- Projeto Integrador – Estilo Stardew Valley
