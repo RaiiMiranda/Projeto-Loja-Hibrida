@@ -1,133 +1,41 @@
-Para um **Projeto Integrador de ADS**, eu recomendaria **um jogo estilo Brotato** na maioria dos casos.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Projeto Integrador - Estilo Brotato
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Vamos comparar pensando no que o professor provavelmente vai avaliar.
+-- Mecânicas principais
+  Movimento do personagem
+  Inimigos surgindo em ondas
+  IA simples
+  Sistema de armas
+  Upgrades
+  Progressão
+  Loja entre rodadas
+  Estatísticas do jogador
 
-| Critério                    | Stardew Valley              | Brotato         |
-| --------------------------- | --------------------------- | --------------- |
-| Complexidade                | Muito alta                  | Média           |
-| Tempo de desenvolvimento    | Longo                       | Curto           |
-| Quantidade de sistemas      | Muitas mecânicas diferentes | Menos mecânicas |
-| Facilidade de concluir      | Difícil                     | Mais fácil      |
-| Demonstração de programação | Boa                         | Muito boa       |
-| Risco de projeto incompleto | Alto                        | Baixo           |
+-- APIs e banco de dados
+  Login/JWT
+  Ranking online
+  Salvamento de progresso
+  Estatísticas dos jogadores
+  Leaderboard
+  Discord Rich Presence
 
-## Se fizer um Stardew Valley
+-- Relatórios:
+  Jogador com maior pontuação
+  Arma mais utilizada
+  Inimigo mais derrotado
+  Tempo médio de sobrevivência
 
-Você precisará desenvolver:
-
-* Sistema de inventário
-* Plantio
-* Crescimento de culturas
-* Economia
-* NPCs
-* Diálogos
-* Relacionamentos
-* Ciclo de dia/noite
-* Salvar progresso
-* Mapas maiores
-* IA de NPCs
-* Loja
-
-Mesmo uma versão simplificada pode ficar grande demais para um semestre.
-
----
-
-## Se fizer um Brotato
-
-Você pode focar mais na parte técnica:
-
-### Mecânicas principais
-
-* Movimento do personagem
-* Inimigos surgindo em ondas
-* IA simples
-* Sistema de armas
-* Upgrades
-* Progressão
-* Loja entre rodadas
-* Estatísticas do jogador
-
-### APIs e banco de dados
-
-Você ainda consegue usar:
-
-* Login/JWT
-* Ranking online
-* Salvamento de progresso
-* Estatísticas dos jogadores
-* Leaderboard
-* Discord Rich Presence
-
-Isso costuma impressionar mais porque mostra integração entre jogo e sistemas web.
-
----
-
-## Uma ideia interessante
-
-### "Brotato Online"
-
-* Login com JWT
-* Ranking global
-* Estatísticas armazenadas em banco
-* Histórico de partidas
-* Conquistas
-* Discord Rich Presence
-
-Relatórios:
-
-* Jogador com maior pontuação
-* Arma mais utilizada
-* Inimigo mais derrotado
-* Tempo médio de sobrevivência
-
-Isso conversa muito bem com os conteúdos de ADS:
-
-* Banco de dados
-* APIs REST
-* Autenticação
-* Estatística
-* Relatórios
-* Consumo de APIs
-
----
-
-## O que eu faria
-
-Se o objetivo é **tirar uma nota alta e garantir que o projeto fique pronto**, escolheria um **roguelike survivor estilo Brotato/Vampire Survivors**.
-
-Se o objetivo é **ter um jogo mais bonito e divertido para portfólio**, escolheria o Stardew Valley simplificado.
-
-Para um Projeto Integrador, geralmente vale mais um projeto **100% concluído e polido** do que um Stardew Valley que termina com metade das funcionalidades planejadas.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Projeto Integrador – Farm Game
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Projeto Integrador – Estilo Stardew Valley
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Descrição do Projeto
 
 Desenvolvimento de um jogo de simulação RPG 2D com visão top-down, inspirado em jogos como Stardew Valley.
 O jogador assume o papel de um fazendeiro que deve administrar sua plantação, interagir com moradores da cidade e evoluir sua fazenda ao longo dos dias. O progresso é salvo online através de uma API REST, permitindo autenticação e persistência dos dados do jogador.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Objetivo
 
@@ -139,7 +47,7 @@ Desenvolver uma aplicação completa composta por:
 - Integração com APIs externas
 - Sistema de autenticação JWT
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Funcionalidades Principais
 
@@ -178,7 +86,7 @@ Desenvolver uma aplicação completa composta por:
   Escolhas de relacionamento
   Evolução do nível de amizade
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Sistema de Progressão
 
@@ -194,13 +102,13 @@ Relacionamentos
 Tempo de Jogo
   Dias sobrevividos
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Condição de Vitória
 
 O jogador desbloqueia o final do jogo após atingir 100 dias jogados, conseguir ter amizade máxima com todos os NPCs e obter certa quantidade de dinheiro
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Diferenciais do Projeto
 
@@ -226,7 +134,7 @@ O jogador desbloqueia o final do jogo após atingir 100 dias jogados, conseguir 
   Enviar e-mail de boas-vindas
   Enviar e-mail para recuperação de senha
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Relatórios e Dashboard
 
@@ -239,29 +147,13 @@ Fazer talvez um painel administrativo na WEB
   Produto mais vendido.
   Ranking dos jogadores mais ricos.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Arquitetura
 
-GameMaker
-     |
-     | HTTP Requests
-     v
-API REST
-     |
-     v
-Banco de Dados
+GameMaker recebe os http request que passa pela API REST e busca no banco de dados
 
-Integrações externas:
-
-GameMaker
- ├── OpenWeather
- ├── Discord Rich Presence
- ├── Serviço de Tradução
- └── Serviço de E-mail
-```
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Tecnologias
 
@@ -277,7 +169,7 @@ APIs Externas:
   LibreTranslate
   Serviço SMTP para e-mails
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Assets
 
