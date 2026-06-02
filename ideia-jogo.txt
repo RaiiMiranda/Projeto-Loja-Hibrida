@@ -14,6 +14,8 @@ Jogos de tiro twin-stick é um subgênero de jogos de tiro onde o movimento do p
 stick esquerdo ou WASD (movimento)
 stick direito ou mouse (direção disparos)
 
+o jogador deve então escolher quais armas usar que garantirá vantagem para o personagem escolhido
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Jogabilidade
