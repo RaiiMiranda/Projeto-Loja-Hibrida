@@ -1,11 +1,15 @@
-continuar o Hamstorm
+continuar o Hamstorm, mas agora criar uma história pra ele
 projeto fullstorm/fullstack
 
 
 -- Links Úteis
-Sobre Brotato -> https://store.epicgames.com/news/our-brotato-guide-highlights-the-best-spuds-to-take-into-battle?lang=pt-BR
-Um wrapper (empacotador - encaminha chamadas para outra classe ou função) HTTP simples para o GameMaker Studio 2 -> https://github.com/Sidorakh/http.gml?tab=readme-ov-file
-
+Sobre Brotato
+  https://store.epicgames.com/news/our-brotato-guide-highlights-the-best-spuds-to-take-into-battle?lang=pt-BR
+Um wrapper (empacotador - encaminha chamadas para outra classe ou função) HTTP simples para o GameMaker Studio 2
+  biblioteca (ou extensão) HTTP.gml para fazer o jogo feito no GameMaker conversar com o servidor
+  https://github.com/Sidorakh/http.gml?tab=readme-ov-file
+  https://docs.sidorakh.net/http.gml/#/2.2.x/getting-started
+  
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- Projeto Integrador - Hamstorm (Estilo Brotato)
