@@ -1,4 +1,5 @@
 continuar o Hamstorm
+projeto fullstorm/fullstack
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- Projeto Integrador - Estilo Brotato
@@ -16,14 +17,23 @@ stick direito ou mouse (direção disparos)
 
 o jogador deve então escolher quais armas usar que garantirá vantagem para o personagem escolhido
 
+dificuldade da partida
+personagens novos
+são desbloqueados conforme vai jogando
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- Tecnologias
+  front-end do jogo: GameMaker
+  front-end da web: HTML, CSS e Boostrap
+  backend: Node + Express com JWT pra segurança
 
 -- Jogabilidade
   jogador controla o personagem e os tiros são disparados automaticamente nos inimigos no campo de visão
   dura 20 ondas, em cada uma o jogador deve fugir dos inimigos, desviar dos projéteis deles e coletar os materiais dropados por eles
   pode equipar até 6 armas, podendo ser melhoradas para causar mais dano ou ter efeitos especiais
   tem uma loja entre uma onda e outra, onde gasta os materiais coletados para:
-    comprar novas armas
+    comprar novas armas (fundir umas com as outras pra melhorar)
     itens de cura
     melhorias de atributos (vida, armadura, velocidade de ataque, ...)
     perks (vantagens passivas)
@@ -51,8 +61,8 @@ o jogador deve então escolher quais armas usar que garantirá vantagem para o p
 -- Relatórios:
   Jogador com maior pontuação
   Arma mais utilizada
-  Inimigo mais derrotado
-  Tempo médio de sobrevivência
+  Inimigos mais derrotados (bom para balancear o jogo)
+  Tempo médio de sobrevivência (bom pra balancear também)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
