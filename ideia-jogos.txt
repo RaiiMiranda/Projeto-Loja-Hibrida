@@ -2,6 +2,33 @@ continuar o Hamstorm, mas agora criar uma história pra ele
 mudar mecanicas, fazer diferente, não pode ser igual
 ver melhor sobre a classificação desse jogo
 
+
+e se eu misturar um Cuphead com Brotato
+
+Cuphead tem aquilo de ilhas com boss pra serem derrotados
+
+e se
+
+eu fizesse ilhas com lugares pro player selecionar e derrotar a onda de inimigos, depois de derrotar todas as onda
+libera a onda final, que é um boss
+
+ideia do lucas:
+zona da onda não troca de cena
+	vira uma zona maior que o player não consegue sair
+
+teria entao, um mapa com 4 pontos, cada um desses o player tem que sobreviver as ondas de inimigos
+  completou? volta pra ilha e pode ir na loja melhorar seu personagem
+  morreu? perde tudo e volta pra inicio novamente, tendo que ir em todos os 4 pontos
+
+passou os 4 pontos?
+
+entao chega no ponto 5: O BOSS
+  vem inimigos variados além do boss
+
+matou o boss? parabéns
+morreu? 
+
+
 projeto fullstorm/fullstack
 
 -- Links Úteis
